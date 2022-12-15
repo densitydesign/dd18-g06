@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link rel="stylesheet" href="/styles/mappa.css">
+
+  <title> ARTIFICIAL CLIMATE IMAGES </title>
+</head>
+
+<body>
+
+  <div id="BoxTesto">
+    <p id="Testo"></p>
+  </div>
+
+
+  <h1 class="main-title" id="main-title">Explore all the biases</h1>
+  <div class="bias" id="bias"> </div>
+  <div class="reset" id="reset"> </div>
+  <!-- <div class="controlli" id="controlli"> </div> -->
+
+  <div class="workspace">
+    <div class="workspace-content">
+
+      <!-- <div class="card" style="width: 18rem;">
+            <img class="card-img-top" src="https://via.placeholder.com/600" alt="Card image cap">
+            <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+            </div>
+          </div> -->
+
+      <!-- <div id="all-cards" class="box-categorie"></div> -->
+      <!-- Our card elements will be placed here -->
+      <div class="box-categorie">
+        <p class="titoli-categorie">General prompt</p>
+        <div id="general" class="box-prompt">
+          <div class="prompt" id="climate-change" onmouseover="scrittaSi(this)" onmouseout="ScrittaNo(this)"></div>
+          <div class="prompt" id="climate-crisis" onmouseover="scrittaSi(this)" onmouseout="ScrittaNo(this)"></div>
+          <div class="prompt" id="climate-emergency" onmouseover="scrittaSi(this)" onmouseout="ScrittaNo(this)"></div>
+        </div>
+      </div>
+      <div class="box-categorie">
+        <p class="titoli-categorie">Impacts</p>
+        <div id="impacts" class="box-prompt">
+          <div class="prompt" id="people-affected-by-climate-change" onmouseover="scrittaSi(this)"
+            onmouseout="ScrittaNo(this)"></div>
+          <div class="prompt" id="people-affected-by-extreme-weather" onmouseover="scrittaSi(this)"
+            onmouseout="ScrittaNo(this)"></div>
+          <div class="prompt" id="people-affected-by-floodings" onmouseover="scrittaSi(this)"
+            onmouseout="ScrittaNo(this)"></div>
+          <div class="prompt" id="people-affected-by-droughts" onmouseover="scrittaSi(this)"
+            onmouseout="ScrittaNo(this)"></div>
+          <div class="prompt" id="people-affected-by-smog" onmouseover="scrittaSi(this)" onmouseout="ScrittaNo(this)">
+          </div>
+          <div class="prompt" id="people-affected-by-wildfires" onmouseover="scrittaSi(this)"
+            onmouseout="ScrittaNo(this)"></div>
+        </div>
+      </div>
+      <div class="box-categorie">
+        <p class="titoli-categorie">Causes</p>
+        <div id="causes" class="box-prompt">
+          <div class="prompt" id="consumerism-affecting-climate-change" onmouseover="scrittaSi(this)"
+            onmouseout="ScrittaNo(this)"></div>
+          <div class="prompt" id="companies-making-greenwashing" onmouseover="scrittaSi(this)"
+            onmouseout="ScrittaNo(this)"></div>
+        </div>
+      </div>
+      <div class="box-categorie">
+        <p class="titoli-categorie">Solutions</p>
+        <div id="solutions" class="box-prompt">
+          <div class="prompt" id="people-engaging-in-sustainability" onmouseover="scrittaSi(this)"
+            onmouseout="ScrittaNo(this)"></div>
+          <div class="prompt" id="people-recycling-for-sustainability" onmouseover="scrittaSi(this)"
+            onmouseout="ScrittaNo(this)"></div>
+          <div class="prompt" id="people-zero-emissions" onmouseover="scrittaSi(this)" onmouseout="ScrittaNo(this)">
+          </div>
+          <div class="prompt" id="people-using-renewable-energy" onmouseover="scrittaSi(this)"
+            onmouseout="ScrittaNo(this)"></div>
+          <div class="prompt" id="people-engaging-in-circular-economy" onmouseover="scrittaSi(this)"
+            onmouseout="ScrittaNo(this)"></div>
+          <div class="prompt" id="people-living-eco-friendly" onmouseover="scrittaSi(this)"
+            onmouseout="ScrittaNo(this)"></div>
+          <div class="prompt" id="climate-change-engineers" onmouseover="scrittaSi(this)" onmouseout="ScrittaNo(this)">
+          </div>
+          <div class="prompt" id="climate-change-volunteers" onmouseover="scrittaSi(this)" onmouseout="ScrittaNo(this)">
+          </div>
+          <div class="prompt" id="people-buying-second-hand-for-sustainability" onmouseover="scrittaSi(this)"
+            onmouseout="ScrittaNo(this)"></div>
+          <div class="prompt" id="people-careful-to-zero-waste" onmouseover="scrittaSi(this)"
+            onmouseout="ScrittaNo(this)"></div>
+          <div class="prompt" id="people-daily-zero-waste-choices" onmouseover="scrittaSi(this)"
+            onmouseout="ScrittaNo(this)"></div>
+          <div class="prompt" id="people-ethics-of-reuse" onmouseover="scrittaSi(this)" onmouseout="ScrittaNo(this)">
+          </div>
+          <div class="prompt" id="sustainable-projects-for-preventing-climate-change" onmouseover="scrittaSi(this)"
+            onmouseout="ScrittaNo(this)"></div>
+          <div class="prompt" id="climate-change-activists" onmouseover="scrittaSi(this)" onmouseout="ScrittaNo(this)">
+          </div>
+          <div class="prompt" id="climate-change-researchers" onmouseover="scrittaSi(this)"
+            onmouseout="ScrittaNo(this)"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ******************* Utilities ******************* -->
+  <!-- Javascript libraries -->
+  <!-- d3.js -->
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+
+  <!-- jQuery and Popper. They are required by Bootstrap, we discourage using jQuery -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <!-- Bootstrap -->
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script> -->
+  <!-- Your js file -->
+  <script src="/scripts/mappa.js"></script>
+  <!-- <script src="jquery.js"></script> -->
+  <script src="/scripts/zoom.js"></script>
+
+</body>
+
+</html>

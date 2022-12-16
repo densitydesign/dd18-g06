@@ -631,8 +631,8 @@ function booleane() {
 
 
 function overGif1(){
-  if  
-  (a == false && 
+  if
+  (a == false &&
   b == false &&
   c == false &&
   d == false &&
@@ -645,8 +645,8 @@ function overGif1(){
   gif1.style.display = "block";
 }}
 function overGif2(){
-  if  
-  (a == false && 
+  if
+  (a == false &&
   b == false &&
   c == false &&
   d == false &&
@@ -659,8 +659,8 @@ function overGif2(){
   gif2.style.display = "block";
 }}
 function overGif3(){
-  if  
-  (a == false && 
+  if
+  (a == false &&
   b == false &&
   c == false &&
   d == false &&
@@ -673,8 +673,8 @@ function overGif3(){
   gif3.style.display = "block";
 }}
 function overGif4(){
-  if  
-  (a == false && 
+  if
+  (a == false &&
   b == false &&
   c == false &&
   d == false &&
@@ -687,8 +687,8 @@ function overGif4(){
   gif4.style.display = "block";
 }}
 function overGif5(){
-  if  
-  (a == false && 
+  if
+  (a == false &&
   b == false &&
   c == false &&
   d == false &&
@@ -701,8 +701,8 @@ function overGif5(){
   gif5.style.display = "block";
 }}
 function overGif6(){
-  if  
-  (a == false && 
+  if
+  (a == false &&
   b == false &&
   c == false &&
   d == false &&
@@ -715,8 +715,8 @@ function overGif6(){
   gif6.style.display = "block";
 }}
 function overGif7(){
-  if  
-  (a == false && 
+  if
+  (a == false &&
   b == false &&
   c == false &&
   d == false &&
@@ -729,8 +729,8 @@ function overGif7(){
   gif7.style.display = "block";
 }}
 function overGif8(){
-  if  
-  (a == false && 
+  if
+  (a == false &&
   b == false &&
   c == false &&
   d == false &&

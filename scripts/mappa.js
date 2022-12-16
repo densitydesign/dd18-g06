@@ -834,3 +834,41 @@ function ScrittaNo(x) {
   let Box = document.getElementById("BoxTesto");
   Box.style.display = "none";
 }
+
+
+//Menu
+let menuSx = d3.select("#sx");
+let menuDx = d3.select("#dx");
+let menuLogo = d3.select("#title");
+
+// crea il bottone CATALOGUE
+menuSx
+  .append("a")
+  .attr("href", "/pages/catalogo.html")
+  .append("button")
+  .attr("class", "bottoniMenu")
+  .attr("id", "catalogue")
+  .text("CATALOGUE")
+  .on("click", function () {});
+
+// crea il bottone ATLAS
+menuSx
+  .append("a")
+  .attr("href", "/pages/mappa.html")
+  .append("button")
+  .attr("class", "bottoniMenu")
+  .attr("id", "atlas")
+  .text("ATLAS");
+// .on("click", function () {
+// });
+
+// crea il bottone ABOUT
+menuDx
+  .append("a")
+  .attr("href", "/pages/about.html")
+  .append("button")
+  .attr("class", "bottoniMenu")
+  .attr("id", "about")
+  .text("ABOUT");
+// .on("click", function () {
+// });

@@ -1,3 +1,24 @@
+@font-face {
+	font-family: 'Exposure';
+	src: url('/assets/fonts/ExposureTrialVAR.ttf') format("truetype-variations");
+	font-weight: -100 100;
+}
+
+@font-face {
+	font-family: 'Exposure-Italic';
+	src: url('/assets/fonts/ExposureTrialVAR-Italic.ttf') format("truetype-variations");
+	font-weight: -100 100;
+}
+
+@font-face {
+	font-family: 'Suisse-Regular';
+	src: url('/assets/fonts/SuisseIntl-Regular.otf')
+}
+
+a {
+  text-decoration: none; /* no underline */
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -6,9 +27,10 @@
 }
 
 body {
-  width: 100vw;
-  padding: 0;
-  margin: 0;
+	background-image: url(/assets/svg/pattern_bianco.svg);
+  background-size: 1.5%;
+  background-repeat: repeat;
+	background-color: rgb(255, 255, 255);
 }
 
 .main-title {
@@ -18,6 +40,115 @@ body {
   left: 2vw;
   z-index: 1;
 }
+
+.menu{
+  background-color: #f8f8f8;
+  position: fixed;
+	display: flex;
+	justify-content: space-between;
+	top: 0;
+	z-index: 100;
+	width: 100vw;
+  height: 7vh;
+  box-shadow: 0 0 15px 15px #f8f8f8;
+  z-index: 1;
+  display: flex;
+  flex-direction: row;
+  justify-content:space-around;
+}
+
+.sx {
+  width: 30vw;
+  z-index: 1;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  padding-left: 1.5vw;
+  gap: 50px;
+}
+
+.dx {
+  width: 30vw;
+  z-index: 1;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  padding-right: 1.5vw;
+  gap: 50px;
+}
+
+.logo {
+  width: 40vw;
+  z-index: 1;
+  display: flex;
+  flex-direction: row;
+  justify-content:center;
+}
+
+.title {
+	/* display: inline-block; */
+  height: 7vh;
+  /* font-size: var(--fontSize); */
+  font-size: 2vw;
+  font-family: 'Exposure';
+  font-variation-settings: "EXPO" 100;
+	color: rgb(0, 0, 0);
+  padding-top: 1.5vh;
+  transition: font-variation-settings .45s ;
+	/* z-index: 10; */
+	/* margin-top: var(--margin); */
+  cursor: pointer;
+}
+
+.title:hover {
+	/* display: inline-block; */
+  height: 7vh;
+  /* font-size: var(--fontSize); */
+  font-size: 2vw;
+  font-family: 'Exposure';
+  font-variation-settings: "EXPO" -100;
+	color: rgb(0, 0, 0);
+  padding-top: 1.5vh;
+  transition: font-variation-settings .45s ;
+	/* z-index: 10; */
+	/* margin-top: var(--margin); */
+  cursor: pointer;
+}
+
+.bottoniMenu {
+  font-family: 'Suisse-Regular';
+  /* font-weight: 400; */
+  font-size: 12px;
+  width: auto;
+  height: auto;
+  background: #f8f8f8;
+  /* backdrop-filter: blur(5px);
+  border-radius: 50px; */
+  border: none;
+  cursor: pointer;
+}
+
+.bottoniMenu:hover {
+  font-family: 'Suisse-Regular';
+  /* font-weight: 400; */
+  font-size: 12px;
+  text-decoration: underline;
+  width: auto;
+  height: auto;
+  background: #f8f8f8;
+  /* backdrop-filter: blur(5px);
+  border-radius: 50px; */
+  border: none;
+  cursor: pointer;
+}
+
+#atlas{
+  font-family: 'SuisseIntl-Bold';
+  text-decoration: underline;
+}
+
 
 .bias {
   position: absolute;
@@ -101,7 +232,7 @@ body {
 }
 
 .workspace {
-  background-color: rgb(246, 246, 246);
+  /* background-color: rgb(246, 246, 246); */
   width: 100vw;
   height: 100vh;
   overflow: hidden;
@@ -109,15 +240,17 @@ body {
 }
 
 .workspace-content {
-  background-color: rgb(251, 195, 195);
-  width: 160vw;
-  margin-left: 2vw;
+  /* background-color: rgb(251, 195, 195); */
+  width: 162vw;
+  margin-left: 1.5vw;
   height: auto;
   margin-top: 12vh;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  
+  justify-content: center;  
+  gap: 2.2vw;
+
 }
 
 .box-categorie{
@@ -137,23 +270,33 @@ body {
 }
 
 #general{
-  width: 10%;
-  background-color: aquamarine;
+  display: flex;
+  flex-direction: row;
+  width: 19vw;
+  gap: 0.5vw;
 }
 
+
 #impacts{
-  width: 20%;
-  background-color: aquamarine;
+  display: flex;
+  flex-direction: row;
+  width: 39vw;
+  gap: 0.5vw;
 }
 
 #solutions{
-  width: 40%;
-  background-color: aquamarine;
+  display: flex;
+  flex-direction: row;
+  width: 78vw;
+  gap: 0.5vw;
 }
 
 #causes{
-  width: 10%;
-  background-color: aquamarine;
+  display: flex;
+  flex-direction: row;
+  width: 19vw;
+  gap: 0.5vw;
+
 }
 
 .titoli-categorie{
@@ -161,6 +304,7 @@ body {
   flex-direction: row;
   font-size: 12pt;
   padding-bottom: 0.5vh;
+  padding-left: 0.5vw;
 }
 
 
@@ -168,6 +312,11 @@ body {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  padding: 0.5vw;
+  /* background-color: rgb(248, 255, 180); */
+  width: 19vw;
+  justify-content: center;
+
 }
 
 .prompt:hover{
@@ -175,13 +324,15 @@ body {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  justify-content: center;
+
 }
 
 .card {
   width: 3vw;
   height: 3vw;
   padding: 0;
-  margin: 0.5vw;
+  margin: 0.3vw;
   background-color: #fff;
 }
 

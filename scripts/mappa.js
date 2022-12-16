@@ -159,7 +159,7 @@ biasContainer
   .append("button")
   .attr("class", "bottoniBias")
   .attr("id", "bottoneBiasA")
-  .text("BIAS 1")
+  .text("IT'S GIVING *RACISM*")
   // al click, resetta e mostra solo le immagini A
   .on("click", function () {
     if (a == false) {
@@ -240,7 +240,7 @@ biasContainer
   .append("button")
   .attr("class", "bottoniBias")
   .attr("id", "bottoneBiasB")
-  .text("BIAS 2")
+  .text("BIG GREEN DREAM TEAM")
   // al click, resetta e mostra solo le immagini B
   .on("click", function () {
     if (b == false) {
@@ -323,7 +323,7 @@ biasContainer
   .append("button")
   .attr("class", "bottoniBias")
   .attr("id", "bottoneBiasC")
-  .text("BIAS 3")
+  .text("LANDSCAPE DÉJÀ VU")
   // al click, resetta e mostra solo le immagini C
   .on("click", function () {
     if (c == false) {
@@ -406,7 +406,7 @@ biasContainer
   .append("button")
   .attr("class", "bottoniBias")
   .attr("id", "bottoneBiasD")
-  .text("BIAS 4")
+  .text("SOLUTIONS, BUT GREENWASHED")
   // al click, resetta e mostra solo le immagini D
   .on("click", function () {
     if (d == false) {
@@ -489,7 +489,7 @@ biasContainer
   .append("button")
   .attr("class", "bottoniBias")
   .attr("id", "bottoneBiasE")
-  .text("BIAS 5")
+  .text("CLIMATE PATCHWORK")
   // al click, resetta e mostra solo le immagini E
   .on("click", function () {
     if (e == false) {
@@ -572,7 +572,7 @@ biasContainer
   .append("button")
   .attr("class", "bottoniBias")
   .attr("id", "bottoneBiasF")
-  .text("BIAS 6")
+  .text("SCRIPTS BEFORE PICS")
   // al click, resetta e mostra solo le immagini F
   .on("click", function () {
     if (f == false) {
@@ -653,7 +653,7 @@ biasContainer
   .append("button")
   .attr("class", "bottoniBias")
   .attr("id", "bottoneBiasG")
-  .text("BIAS 7")
+  .text("DOWN TO EARTH")
   // al click, resetta e mostra solo le immagini G
   .on("click", function () {
     if (g == false) {
@@ -735,7 +735,7 @@ biasContainer
 .append("button")
 .attr("class", "bottoniBias")
 .attr("id", "bottoneBiasH")
-.text("BIAS 8")
+.text("NONSENSE OUT OF HAND")
 // al click, resetta e mostra solo le immagini H
 .on("click", function () {
   if (h == false) {

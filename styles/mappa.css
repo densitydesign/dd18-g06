@@ -109,13 +109,13 @@ body {
 }
 
 .workspace-content {
-  /* background-color: rgb(251, 195, 195); */
+  background-color: rgb(251, 195, 195);
   width: 160vw;
   margin-left: 2vw;
   height: auto;
   margin-top: 12vh;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   flex-wrap: wrap;
   
 }
@@ -136,7 +136,29 @@ body {
   flex-wrap: wrap;
 }
 
+#general{
+  width: 10%;
+  background-color: aquamarine;
+}
+
+#impacts{
+  width: 20%;
+  background-color: aquamarine;
+}
+
+#solutions{
+  width: 40%;
+  background-color: aquamarine;
+}
+
+#causes{
+  width: 10%;
+  background-color: aquamarine;
+}
+
 .titoli-categorie{
+  display: flex;
+  flex-direction: row;
   font-size: 12pt;
   padding-bottom: 0.5vh;
 }

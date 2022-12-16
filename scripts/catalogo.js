@@ -1,12 +1,13 @@
 // Interpret the data as the correct format. Use d3.csv or d3.tsv accordingly.
-data = d3.csv("/assets/dataset/data_catalogo.csv");
+data = d3.csv("/assets/dataset/data_mappa.csv");
+data2 = d3.csv("/assets/dataset/data_catalogo.csv");
 let percorsoImmagini = "/assets/catalogo_imgs/normale/";
 let altezza = 250;
 
-//array contenitori
+//array contenitori png
 let boxArray = [
-  "hero",
-  "help",
+  // "hero",
+  // "help",
   "Protesting",
   "Standing",
   "Doing-stuff",
@@ -17,19 +18,21 @@ let boxArray = [
   "planet",
   "reuse",
   "waste",
-  "mix",
-  "pairs",
+  // "mix",
+  // "pairs",
   "signs",
   "infographics",
   "texts",
   "face",
   "Nosense",
 ];
+//array contenitori gif
+let boxArray2 = ["hero", "help", "mix", "pairs"];
 
-//percorso sottocategorie
+//percorso sottocategorie png
 let catArray = [
-  "A_Heroes",
-  "A_Victims",
+  // "A_Heroes",
+  // "A_Victims",
   "B_Protesting",
   "B_Standing",
   "B_Doing-things",
@@ -40,14 +43,16 @@ let catArray = [
   "D_sustainability",
   "D_reduce",
   "D_zero",
-  "E_Collage",
-  "E_Bizarre",
+  // "E_Collage",
+  // "E_Bizarre",
   "F_signs",
   "F_infographics",
   "F_text",
   "G_earth",
   "H",
 ];
+//percorso sottocategorie gif
+let catArray2 = ["A_Heroes", "A_Victims", "E_Collage", "E_Bizarre"];
 
 let a = false;
 let b = false;
@@ -59,15 +64,14 @@ let g = false;
 let h = false;
 let i = false;
 
-// Select the container where we will put our HTML elements
-
+// metti tutti i png nei div corretti
 for (let i = 0; i < boxArray.length; i++) {
   let divId = "#" + boxArray[i];
   let filtro = catArray[i];
   let imgDiv = d3.select(divId);
 
   data.then(function (data) {
-    // crea div per ogni elemento con prompt climate change
+    // crea div per ogni elemento con prompt x
     let card = imgDiv
       .selectAll("div")
       .data(data)
@@ -81,7 +85,53 @@ for (let i = 0; i < boxArray.length; i++) {
       // })
       .attr("class", "card")
       .attr("id", "allCards")
-      // crea div solo per le immagini con prompt climate change
+      // crea div solo per le immagini con prompt x
+      .style("display", "none")
+      .filter(function (d) {
+        return d[filtro] == "TRUE";
+      })
+      .style("display", "flex");
+
+    // IMMAGINI
+    card.append("img").attr("src", function (d) {
+      let link_image = d.link_image;
+      let path = percorsoImmagini;
+      // Concatenate the path and the link_image of the image
+      return path + link_image;
+    });
+
+    // PROMPT
+    card
+      .append("div")
+      .attr("class", "card-prompt")
+      .text(function (d) {
+        return "prompt: " + d.prompt;
+      });
+  });
+}
+
+// metti tutte le gif nei div corretti
+for (let i = 0; i < boxArray2.length; i++) {
+  let divId = "#" + boxArray2[i];
+  let filtro = catArray2[i];
+  let imgDiv = d3.select(divId);
+
+  data2.then(function (data2) {
+    // crea div per ogni elemento con prompt x
+    let card = imgDiv
+      .selectAll("div")
+      .data(data2)
+      .join("div")
+      // all'hover fai apparire il prompt
+      // .attr("onmouseover", function () {
+      //   return "d3.select(this)._groups[0][0].lastChild.style.opacity=1";
+      // })
+      // .attr("onmouseout", function () {
+      //   return "d3.select(this)._groups[0][0].lastChild.style.opacity=0";
+      // })
+      .attr("class", "card")
+      .attr("id", "allCards")
+      // crea div solo per le immagini con prompt x
       .style("display", "none")
       .filter(function (d) {
         return d[filtro] == "TRUE";
@@ -111,39 +161,37 @@ for (let i = 0; i < boxArray.length; i++) {
 //Menu
 let menuSx = d3.select("#sx");
 let menuDx = d3.select("#dx");
-let menuLogo = d3.select("#logo");
-
+let menuLogo = d3.select("#title");
 
 // crea il bottone CATALOGUE
 menuSx
-  .append('a')
-  .attr('href', "/pages/catalogo.html")
+  .append("a")
+  .attr("href", "/pages/catalogo.html")
   .append("button")
   .attr("class", "bottoniMenu")
   .attr("id", "catalogue")
   .text("CATALOGUE")
-  .on("click", function () {
-  });
+  .on("click", function () {});
 
 // crea il bottone ATLAS
 menuSx
-  .append('a')
-  .attr('href', "/pages/mappa.html")
+  .append("a")
+  .attr("href", "/pages/mappa.html")
   .append("button")
   .attr("class", "bottoniMenu")
   .attr("id", "atlas")
-  .text("ATLAS")
-  // .on("click", function () {
-  // });
+  .text("ATLAS");
+// .on("click", function () {
+// });
 
-  // crea il bottone ABOUT
+// crea il bottone ABOUT
 menuDx
-.append('a')
-.attr('href', "/pages/about.html")
-.append("button")
-.attr("class", "bottoniMenu")
-.attr("id", "about")
-.text("ABOUT")
+  .append("a")
+  .attr("href", "/pages/about.html")
+  .append("button")
+  .attr("class", "bottoniMenu")
+  .attr("id", "about")
+  .text("ABOUT");
 // .on("click", function () {
 // });
 
@@ -165,7 +213,7 @@ zoomContainer
   .attr("id", "ZoomPiu")
   .text("+")
   .on("click", function () {
-    if (altezza < 400) {
+    if (altezza < 500) {
       let ZoomMeno = d3.select("#ZoomMeno");
       ZoomMeno.style("opacity", "1");
       ZoomMeno.style("cursor", "pointer");
@@ -240,9 +288,9 @@ zoomContainer
     let ZoomMeno = d3.select("#ZoomMeno");
     ZoomMeno.style("opacity", "1");
     ZoomMeno.style("cursor", "pointer");
-    altezza = 50;
+    altezza = 250;
     let box = d3.selectAll(".box-img");
-    box.style("height", "50px");
+    box.style("height", "250px");
   });
 
 // // PROMPT CHE SEGUE LA FRECCINA
@@ -288,6 +336,8 @@ function ap(x) {
       let cont2 = document.getElementById("boxCat2");
       cont2.style.display = "flex";
       setTimeout(animazione, 300);
+      window.scrollTo(100, 0);
+
       a = true;
     } else if (a == true) {
       let titolibig1 = document.getElementById("titoli-big1");
@@ -319,6 +369,8 @@ function ap(x) {
       let cont3 = document.getElementById("boxCat5");
       cont3.style.display = "flex";
       setTimeout(animazione, 300);
+      window.scrollTo(100, 0);
+
       b = true;
     } else if (b == true) {
       let titolibig2 = document.getElementById("titoli-big2");
@@ -353,6 +405,8 @@ function ap(x) {
       let cont3 = document.getElementById("boxCat8");
       cont3.style.display = "flex";
       setTimeout(animazione, 300);
+      window.scrollTo(100, 0);
+
       c = true;
     } else if (c == true) {
       let titolibig3 = document.getElementById("titoli-big3");
@@ -389,6 +443,9 @@ function ap(x) {
       let cont4 = document.getElementById("boxCat12");
       cont4.style.display = "flex";
       setTimeout(animazione, 300);
+      window.scrollTo(100, 0);
+
+      window.scrollTo(100, 0);
       d = true;
     } else if (d == true) {
       let titolibig4 = document.getElementById("titoli-big4");
@@ -424,6 +481,7 @@ function ap(x) {
       let cont2 = document.getElementById("boxCat14");
       cont2.style.display = "flex";
       setTimeout(animazione, 300);
+      window.scrollTo(100, 0);
       e = true;
     } else if (e == true) {
       let titolibig5 = document.getElementById("titoli-big5");
@@ -457,6 +515,8 @@ function ap(x) {
       let cont3 = document.getElementById("boxCat17");
       cont3.style.display = "flex";
       setTimeout(animazione, 300);
+      window.scrollTo(100, 0);
+
       f = true;
     } else if (f == true) {
       let titolibig6 = document.getElementById("titoli-big6");
@@ -488,6 +548,8 @@ function ap(x) {
       let cont1 = document.getElementById("boxCat18");
       cont1.style.display = "flex";
       setTimeout(animazione, 300);
+      window.scrollTo(100, 0);
+
       g = true;
     } else if (g == true) {
       let titolibig7 = document.getElementById("titoli-big7");
@@ -515,6 +577,8 @@ function ap(x) {
       let cont1 = document.getElementById("boxCat19");
       cont1.style.display = "flex";
       setTimeout(animazione, 300);
+      window.scrollTo(100, 0);
+
       i = true;
     } else if (i == true) {
       let titolibig8 = document.getElementById("titoli-big8");
@@ -537,7 +601,6 @@ function animazione() {
   let box = d3.selectAll(".box-img");
   box.style("height", "250px");
 }
-
 
 /// fai selezionare solo una sezione per volta
 /// grassetti e italic testo
@@ -615,6 +678,12 @@ function closeAll() {
   cont19.style.display = "none";
   let box = d3.selectAll(".box-img");
   box.style("height", "50px");
+  let ZoomMeno = d3.select("#ZoomMeno");
+  ZoomMeno.style("opacity", "1");
+  ZoomMeno.style("cursor", "pointer");
+  let ZoomPiu = d3.select("#ZoomPiu");
+  ZoomPiu.style("opacity", "1");
+  ZoomPiu.style("cursor", "pointer");
 }
 
 function booleane() {
@@ -629,175 +698,190 @@ function booleane() {
   i = false;
 }
 
+function overGif1() {
+  if (
+    a == false &&
+    b == false &&
+    c == false &&
+    d == false &&
+    e == false &&
+    f == false &&
+    g == false &&
+    h == false &&
+    i == false
+  ) {
+    let gif1 = document.getElementById("gif1");
+    gif1.style.display = "block";
+  }
+}
+function overGif2() {
+  if (
+    a == false &&
+    b == false &&
+    c == false &&
+    d == false &&
+    e == false &&
+    f == false &&
+    g == false &&
+    h == false &&
+    i == false
+  ) {
+    let gif2 = document.getElementById("gif2");
+    gif2.style.display = "block";
+  }
+}
+function overGif3() {
+  if (
+    a == false &&
+    b == false &&
+    c == false &&
+    d == false &&
+    e == false &&
+    f == false &&
+    g == false &&
+    h == false &&
+    i == false
+  ) {
+    let gif3 = document.getElementById("gif3");
+    gif3.style.display = "block";
+  }
+}
+function overGif4() {
+  if (
+    a == false &&
+    b == false &&
+    c == false &&
+    d == false &&
+    e == false &&
+    f == false &&
+    g == false &&
+    h == false &&
+    i == false
+  ) {
+    let gif4 = document.getElementById("gif4");
+    gif4.style.display = "block";
+  }
+}
+function overGif5() {
+  if (
+    a == false &&
+    b == false &&
+    c == false &&
+    d == false &&
+    e == false &&
+    f == false &&
+    g == false &&
+    h == false &&
+    i == false
+  ) {
+    let gif5 = document.getElementById("gif5");
+    gif5.style.display = "block";
+  }
+}
+function overGif6() {
+  if (
+    a == false &&
+    b == false &&
+    c == false &&
+    d == false &&
+    e == false &&
+    f == false &&
+    g == false &&
+    h == false &&
+    i == false
+  ) {
+    let gif6 = document.getElementById("gif6");
+    gif6.style.display = "block";
+  }
+}
+function overGif7() {
+  if (
+    a == false &&
+    b == false &&
+    c == false &&
+    d == false &&
+    e == false &&
+    f == false &&
+    g == false &&
+    h == false &&
+    i == false
+  ) {
+    let gif7 = document.getElementById("gif7");
+    gif7.style.display = "block";
+  }
+}
+function overGif8() {
+  if (
+    a == false &&
+    b == false &&
+    c == false &&
+    d == false &&
+    e == false &&
+    f == false &&
+    g == false &&
+    h == false &&
+    i == false
+  ) {
+    let gif8 = document.getElementById("gif8");
+    gif8.style.display = "block";
+  }
+}
 
-function overGif1(){
-  if
-  (a == false &&
-  b == false &&
-  c == false &&
-  d == false &&
-  e == false &&
-  f == false &&
-  g == false &&
-  h == false &&
-  i == false ) {
-  let gif1 = document.getElementById("gif1");
-  gif1.style.display = "block";
-}}
-function overGif2(){
-  if
-  (a == false &&
-  b == false &&
-  c == false &&
-  d == false &&
-  e == false &&
-  f == false &&
-  g == false &&
-  h == false &&
-  i == false ) {
-  let gif2 = document.getElementById("gif2");
-  gif2.style.display = "block";
-}}
-function overGif3(){
-  if
-  (a == false &&
-  b == false &&
-  c == false &&
-  d == false &&
-  e == false &&
-  f == false &&
-  g == false &&
-  h == false &&
-  i == false ) {
-  let gif3 = document.getElementById("gif3");
-  gif3.style.display = "block";
-}}
-function overGif4(){
-  if
-  (a == false &&
-  b == false &&
-  c == false &&
-  d == false &&
-  e == false &&
-  f == false &&
-  g == false &&
-  h == false &&
-  i == false ) {
-  let gif4 = document.getElementById("gif4");
-  gif4.style.display = "block";
-}}
-function overGif5(){
-  if
-  (a == false &&
-  b == false &&
-  c == false &&
-  d == false &&
-  e == false &&
-  f == false &&
-  g == false &&
-  h == false &&
-  i == false ) {
-  let gif5 = document.getElementById("gif5");
-  gif5.style.display = "block";
-}}
-function overGif6(){
-  if
-  (a == false &&
-  b == false &&
-  c == false &&
-  d == false &&
-  e == false &&
-  f == false &&
-  g == false &&
-  h == false &&
-  i == false ) {
-  let gif6 = document.getElementById("gif6");
-  gif6.style.display = "block";
-}}
-function overGif7(){
-  if
-  (a == false &&
-  b == false &&
-  c == false &&
-  d == false &&
-  e == false &&
-  f == false &&
-  g == false &&
-  h == false &&
-  i == false ) {
-  let gif7 = document.getElementById("gif7");
-  gif7.style.display = "block";
-}}
-function overGif8(){
-  if
-  (a == false &&
-  b == false &&
-  c == false &&
-  d == false &&
-  e == false &&
-  f == false &&
-  g == false &&
-  h == false &&
-  i == false ) {
-  let gif8 = document.getElementById("gif8");
-  gif8.style.display = "block";
-}}
-
-function noOverGif1(){
+function noOverGif1() {
   let gif1 = document.getElementById("gif1");
   gif1.style.display = "none";
 }
-function noOverGif2(){
+function noOverGif2() {
   let gif2 = document.getElementById("gif2");
   gif2.style.display = "none";
 }
-function noOverGif3(){
+function noOverGif3() {
   let gif3 = document.getElementById("gif3");
   gif3.style.display = "none";
 }
-function noOverGif4(){
+function noOverGif4() {
   let gif4 = document.getElementById("gif4");
   gif4.style.display = "none";
 }
-function noOverGif5(){
+function noOverGif5() {
   let gif5 = document.getElementById("gif5");
   gif5.style.display = "none";
 }
-function noOverGif6(){
+function noOverGif6() {
   let gif6 = document.getElementById("gif6");
   gif6.style.display = "none";
 }
-function noOverGif7(){
+function noOverGif7() {
   let gif7 = document.getElementById("gif7");
   gif7.style.display = "none";
 }
-function noOverGif8(){
+function noOverGif8() {
   let gif8 = document.getElementById("gif8");
   gif8.style.display = "none";
 }
 
-function closeGif(){
-    let gif1 = document.getElementById("gif1");
-    gif1.style.display = "none";
+function closeGif() {
+  let gif1 = document.getElementById("gif1");
+  gif1.style.display = "none";
 
-    let gif2 = document.getElementById("gif2");
-    gif2.style.display = "none";
+  let gif2 = document.getElementById("gif2");
+  gif2.style.display = "none";
 
-    let gif3 = document.getElementById("gif3");
-    gif3.style.display = "none";
+  let gif3 = document.getElementById("gif3");
+  gif3.style.display = "none";
 
-    let gif4 = document.getElementById("gif4");
-    gif4.style.display = "none";
+  let gif4 = document.getElementById("gif4");
+  gif4.style.display = "none";
 
-    let gif5 = document.getElementById("gif5");
-    gif5.style.display = "none";
+  let gif5 = document.getElementById("gif5");
+  gif5.style.display = "none";
 
-    let gif6 = document.getElementById("gif6");
-    gif6.style.display = "none";
+  let gif6 = document.getElementById("gif6");
+  gif6.style.display = "none";
 
-    let gif7 = document.getElementById("gif7");
-    gif7.style.display = "none";
+  let gif7 = document.getElementById("gif7");
+  gif7.style.display = "none";
 
-    let gif8 = document.getElementById("gif8");
-    gif8.style.display = "none";
+  let gif8 = document.getElementById("gif8");
+  gif8.style.display = "none";
 }

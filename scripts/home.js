@@ -1,7 +1,7 @@
 // scroll top on refresh
-window.onbeforeunload = function () {
-  window.scrollTo(0, 0);
-}
+// window.onbeforeunload = function () {
+//   window.scrollTo(0, 0);
+// }
 
 //-------------------------- shapes --------------------------//
 // $(function(){
@@ -41,10 +41,7 @@ const saveCursorPosition = function(x, y) {
   document.addEventListener('mousemove', e => { saveCursorPosition(e.clientX, e.clientY); })
 
 
-//parallax
-  // var scene = document.getElementById('scene');
-  // var parallaxInstance = new Parallax(scene);
-
+//----------------------parallax-----------------------------//
   var scene = document.getElementById('scene2');
   var parallaxInstance = new Parallax(scene);
 
@@ -52,113 +49,171 @@ const saveCursorPosition = function(x, y) {
   var parallaxInstance = new Parallax(scene);
 
 
-var w;
-var h;
-//------------------------------- get scroll ---------------------------//
-function draw() {
-
-    w = window.innerWidth;
-    h = window.innerHeight;
-
-
-    window.onscroll = function (e) {
-    // console.log(window.scrollY); // Value of scroll Y in px
-    let scrolled = window.scrollY;
-    let margin;
-    let fontSize;
-    let opacity;
-
-//----------------------------- 1st trigger -----------------------------//
-    let trigger1 = h*0.6;
-
-    opacity = map(scrolled, 0, trigger1, 1, 0);
-    margin = map(scrolled, 0, trigger1, 35, 0);
-    fontSize = map(scrolled, 0, trigger1, 10, 2);
-
-    document.documentElement.style.setProperty('--opacity', opacity);
-    document.documentElement.style.setProperty('--margin', margin + 'vh');
-    document.documentElement.style.setProperty('--fontSize', fontSize + 'vw');
-    console.log(window.scrollY);
-
-    if (margin <= 0) {
-      document.documentElement.style.setProperty('--margin', 0);
-      document.documentElement.style.setProperty('--fontSize', 2 + 'vw');
-    }
-
-    if (scrolled >= trigger1){
-      document.getElementById("menu").style.background = "linear-gradient(180deg, rgba(11,13,32,1) 50%, rgba(11,13,32,0) 90%)";
-      document.getElementById("btn1").style.opacity = "1"; document.getElementById("btn1").style.visibility = "visible";
-      document.getElementById("btn2").style.opacity = "1"; document.getElementById("btn2").style.visibility = "visible";
-      document.getElementById("btn3").style.opacity = "1"; document.getElementById("btn3").style.visibility = "visible";
-    }
-    else if (scrolled <= trigger1){
-      document.getElementById("menu").style.background = "transparent";
-      document.getElementById("btn1").style.opacity = "0"; document.getElementById("btn1").style.visibility = "hidden";
-      document.getElementById("btn2").style.opacity = "0"; document.getElementById("btn2").style.visibility = "hidden";
-      document.getElementById("btn3").style.opacity = "0"; document.getElementById("btn3").style.visibility = "hidden";
-    }
-
-//----------------------------- 2nd trigger -----------------------------//
-    let trigger2 = h;
-    if (scrolled >= trigger2){
-      document.getElementById("para1").style.opacity = "1";
-      document.getElementById("freccia1").style.transform = "rotate(0deg)";
-    }
-    else if (scrolled <= trigger2){
-      document.getElementById("para1").style.opacity = "0";
-      document.getElementById("freccia1").style.transform = "rotate(-45deg)";
-    }
-
-//----------------------------- 3rd trigger -----------------------------//
-    let trigger3 = h*1.5;
-    if (scrolled >= trigger3){
-      document.getElementById("para2").style.opacity = "1";
-      document.getElementById("freccia2").style.transform = "rotate(0deg)";
-    }
-    else if (scrolled <= trigger3){
-      document.getElementById("para2").style.opacity = "0";
-      document.getElementById("freccia2").style.transform = "rotate(-45deg)";
-    }
-
-//----------------------------- 4th trigger -----------------------------//
-
-    let trigger4 = h*2.6;
-    if (scrolled >= trigger4){
-      document.getElementById("para3").style.opacity = "1";
-      document.getElementById("freccia3").style.transform = "rotate(0deg)";
-    }
-    else if (scrolled <= trigger4){
-      document.getElementById("para3").style.opacity = "0";
-      document.getElementById("freccia3").style.transform = "rotate(-45deg)";
-    }
-
-//----------------------------- 5th trigger -----------------------------//
-
-    let trigger5 = h*4;
-    if (scrolled >= trigger5){
-      document.getElementById("para4").style.opacity = "1";
-      document.getElementById("freccia4").style.transform = "rotate(0deg)";
-    }
-    else if (scrolled <= trigger5){
-      document.getElementById("para4").style.opacity = "0";
-      document.getElementById("freccia4").style.transform = "rotate(-45deg)";
-    }
-
-//----------------------------- 6th trigger -----------------------------//
-
-    let trigger6 = h*4.8;
-    if (scrolled >= trigger6){
-      document.getElementById("para5").style.opacity = "1";
-      document.getElementById("freccia5").style.transform = "rotate(0deg)";
-    }
-    else if (scrolled <= trigger6){
-      document.getElementById("para5").style.opacity = "0";
-      document.getElementById("freccia5").style.transform = "rotate(-45deg)";
-    }
+gsap.registerPlugin(ScrollTrigger);
+//------------------------------- cover -------------------------//
+gsap.to(".cover", {
+  scrollTrigger: {
+    trigger: ".cover",
+    start: 0,
+    end: window.innerHeight,
+    scrub: true,
+    toggleActions: "restart none none none"
+  },
+  opacity: 0,
+});
 
 
-  };
-}
+gsap.to(".title", {
+  scrollTrigger: {
+    trigger: ".title",
+    start: 0,
+    end: window.innerHeight,
+    scrub: true,
+    toggleActions: "play none none none"
+  },
+  margin: 0,
+  fontSize: window.innerWidth*0.02 ,
+});
+
+gsap.to(".subtitle", {
+  scrollTrigger: {
+    trigger: ".subtitle",
+    start: 0,
+    end: window.innerHeight,
+    scrub: true,
+    toggleActions: "play none none none"
+  },
+  opacity: 0,
+});
+
+
+
+const duration = 0.5;
+const start = "top center";
+const ease = "power1.inOut"
+
+//------------------------------- trigger 1 -------------------------//
+
+gsap.to("#freccia1", {
+  scrollTrigger: {
+    trigger: "#freccia1",
+    start: start,
+    toggleActions: "play none none reverse"
+  },
+  rotation: 45,
+  duration: duration,
+  ease: ease,
+});
+
+gsap.to("#para1", {
+  scrollTrigger: {
+    trigger: "#para1",
+    start: start,
+    toggleActions: "play none none reverse"
+  },
+  opacity: 1,
+  duration: duration,
+  ease: ease,
+});
+
+//------------------------------- trigger 2 -------------------------//
+
+gsap.to("#freccia2", {
+  scrollTrigger: {
+    trigger: "#freccia2",
+    start: start,
+    toggleActions: "play none none reverse"
+  },
+  rotation: 45,
+  duration: duration,
+  ease: ease,
+});
+
+gsap.to("#para2", {
+  scrollTrigger: {
+    trigger: "#para2",
+    start: start,
+    toggleActions: "play none none reverse"
+  },
+  opacity: 1,
+  duration: duration,
+  ease: ease,
+});
+
+//------------------------------- trigger 3 -------------------------//
+
+gsap.to("#freccia3", {
+  scrollTrigger: {
+    trigger: "#freccia3",
+    start: start,
+    toggleActions: "play none none reverse"
+  },
+  rotation: 45,
+  duration: duration,
+  ease: ease,
+});
+
+gsap.to("#para3", {
+  scrollTrigger: {
+    trigger: "#para3",
+    start: start,
+    toggleActions: "play none none reverse"
+  },
+  opacity: 1,
+  duration: duration,
+  ease: ease,
+});
+
+//------------------------------- trigger 4 -------------------------//
+
+gsap.to("#freccia4", {
+  scrollTrigger: {
+    trigger: "#freccia4",
+    start: start,
+    toggleActions: "play none none reverse"
+  },
+  rotation: 45,
+  duration: duration,
+  ease: ease,
+});
+
+gsap.to("#para4", {
+  scrollTrigger: {
+    trigger: "#para4",
+    start: start,
+    toggleActions: "play none none reverse"
+  },
+  opacity: 1,
+  duration: duration,
+  ease: ease,
+});
+
+//------------------------------- trigger 5 -------------------------//
+
+gsap.to("#freccia5", {
+  scrollTrigger: {
+    trigger: "#freccia5",
+    start: start,
+    toggleActions: "play none none reverse"
+  },
+  rotation: 45,
+  duration: duration,
+  ease: ease,
+});
+
+gsap.to("#para5", {
+  scrollTrigger: {
+    trigger: "#para5",
+    start: start,
+    toggleActions: "play none none reverse"
+  },
+  opacity: 1,
+  duration: duration,
+  ease: ease,
+});
+
+
+
 
 //-------------------------- change image hover ----------------------------//
 

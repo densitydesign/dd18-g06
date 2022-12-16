@@ -53,6 +53,10 @@ a {
   cursor: pointer;
 }
 
+#home {
+	text-decoration: none;
+}
+
 .menu{
   background-color: #f8f8f8;
   position: fixed;

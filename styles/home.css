@@ -18,11 +18,6 @@
 :root {
 	--x: 0;
 	--y: 0;
-	--mouseX: 0;
-	--mouseY: 0;
-	--opacity: 1;
-	--margin: 35vh;
-	--fontSize: 10vw;
 }
 
 *{
@@ -53,36 +48,43 @@ section {
 	width: 100%;
 }
 
-button {
+a {
 	width: auto;
-	height: 36px;
 	background-color: transparent;
   border: none;
 	border-radius: 5px;
   color: white;
-  padding: 8px 16px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
 	font-family: 'Suisse-Regular';
-  font-size: 14px;
-	opacity: 0;
-	visibility: hidden;
+  font-size: 12px;
+	/* opacity: 0; */
+	/* visibility: hidden; */
 	transition: all 500ms;
 }
 
-button:hover {
+a:hover {
 	cursor: pointer;
+	text-decoration: underline;
 }
 
 .left {
+	display: flex;
 	width: 25%;
+	gap: 50px;
+	height: 7vh;
+	align-items: center;
+	/* padding-top: 1.5vh; */
 }
 
 .right {
 	display: flex;
 	justify-content: flex-end;
 	width: 25%;
+	height: 7vh;
+	align-items: center;
+	/* padding-top: 1.5vh; */
 }
 
 
@@ -93,16 +95,19 @@ button:hover {
 	top: 0;
 	z-index: 100;
 	width: 100vw;
-	padding: 16px;
+	/* padding-top: 1.5vh; */
+	padding-left: 1.5vw;
+	padding-right: 1.5vw;
 	background: transparent;
-	/* background: linear-gradient(180deg, rgba(11,13,32,1) 50%, rgba(11,13,32,0) 90%); */
+	box-shadow: 0 0 15px 15px rgba(11,13,32,0);
 }
 
 .title_container {
  width: 60%;
  display: flex;
  flex-flow: column;
- justify-content: center;
+ padding: 1.5vh;
+ /* justify-content: center; */
 }
 
 
@@ -124,29 +129,27 @@ button:hover {
 	object-fit: cover;
 	box-sizing: border-box;
 	z-index: 0;
-	opacity: var(--opacity);
 }
 
 .title {
 	display: inline-block;
   text-align: center;
-  font-size: var(--fontSize);
+  font-size: 10vw;
   font-family: 'Exposure';
   font-variation-settings: "EXPO" 100;
 	color: #FFF;
   transition: font-variation-settings .45s ;
 	z-index: 10;
-	margin-top: var(--margin);
+	margin-top: 35vh;
 }
 
 .subtitle {
 	text-align: center;
-	font-size: 1.4vw;
+	font-size: 1.5vw;
 	margin: 0;
 	font-family: 'Suisse-Regular';
 	color: #FFF;
 	z-index: 10;
-	opacity: var(--opacity);
 }
 
 
@@ -263,9 +266,9 @@ div.layer:nth-child(6){
 
 .para {
 	width: 30vw;
-	opacity: 0;
-	transition: all 800ms;
+	opacity: 1;
 	z-index: 10;
+	opacity: 0;
 }
 
 .para p {
@@ -276,11 +279,9 @@ div.layer:nth-child(6){
 	font-variation-settings: "EXPO" -10;
 }
 
-#freccia1 {
-	width: 30px;
-	height: 30px;
-	transform: rotate(-45deg);
-	transition: all 800ms;
+.freccia {
+	width: 2.5vw;
+	height: 2.5vw;
 }
 
 .stereotypes {
@@ -290,20 +291,6 @@ div.layer:nth-child(6){
 	flex-flow: column;
 	justify-content: space-between;
 	z-index: 5;
-}
-
-#freccia2 {
-	width: 30px;
-	height: 30px;
-	transform: rotate(-45deg);
-	transition: all 800ms;
-}
-
-#freccia3 {
-	width: 30px;
-	height: 30px;
-	transform: rotate(-45deg);
-	transition: all 800ms;
 }
 
 
@@ -440,12 +427,6 @@ div.layer2:nth-child(16){
 	height: 100vh;
 }
 
-#freccia4 {
-	width: 30px;
-	height: 30px;
-	transform: rotate(-45deg);
-	transition: all 800ms;
-}
 
 .bold {
 	font-family: 'Exposure';
@@ -474,12 +455,6 @@ div.layer2:nth-child(16){
 	gap: 8%;
 }
 
-#freccia5 {
-	width: 30px;
-	height: 30px;
-	transform: rotate(-45deg);
-	transition: all 800ms;
-}
 
 .catalogue_atlas {
 	display: flex;

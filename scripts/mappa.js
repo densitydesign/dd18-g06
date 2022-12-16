@@ -813,27 +813,27 @@ biasContainer
 });
 
 
+//PROMPT che SEGUE IL CURSORE
+// function scrittaSi(x) {
+//   let t = x.id;
+//   let tDef = t.replaceAll('-', ' ');
+//   let Testo = document.getElementById("Testo");
+//   Testo.innerText = "Prompt: " + tDef;
 
-function scrittaSi(x) {
-  let t = x.id;
-  let tDef = t.replaceAll('-', ' ');
-  let Testo = document.getElementById("Testo");
-  Testo.innerText = "Prompt: " + tDef;
+//   let Box = document.getElementById("BoxTesto");
+//   Box.style.display = "block";
 
-  let Box = document.getElementById("BoxTesto");
-  Box.style.display = "block";
+//   const onMouseMove = (e) => {
+//   Box.style.left = e.pageX + "px";
+//   Box.style.top = e.pageY + "px";
+// };
+// document.addEventListener("mousemove", onMouseMove);
+// }
 
-  const onMouseMove = (e) => {
-  Box.style.left = e.pageX + "px";
-  Box.style.top = e.pageY + "px";
-};
-document.addEventListener("mousemove", onMouseMove);
-}
-
-function ScrittaNo(x) {
-  let Box = document.getElementById("BoxTesto");
-  Box.style.display = "none";
-}
+// function ScrittaNo(x) {
+//   let Box = document.getElementById("BoxTesto");
+//   Box.style.display = "none";
+// }
 
 
 //Menu

@@ -49,6 +49,19 @@ section {
 }
 
 a {
+	text-decoration: underline;
+	text-decoration-thickness: 1px;
+	text-underline-offset: 2px;
+	font-family: inherit;
+	font-size: inherit;
+	color: inherit;
+}
+
+a:hover {
+	cursor: pointer;
+}
+
+.link_menu {
 	width: auto;
 	background-color: transparent;
   border: none;
@@ -64,9 +77,10 @@ a {
 	transition: all 500ms;
 }
 
-a:hover {
+.link_menu:hover {
 	cursor: pointer;
 	text-decoration: underline;
+	text-underline-offset: 3px;
 }
 
 .left {
@@ -98,8 +112,7 @@ a:hover {
 	/* padding-top: 1.5vh; */
 	padding-left: 1.5vw;
 	padding-right: 1.5vw;
-	background: transparent;
-	box-shadow: 0 0 15px 15px rgba(11,13,32,0);
+	background-image: linear-gradient(180deg, rgba(15,15,32,0) 50%, rgba(15,15,32,0) 80%);;
 }
 
 .title_container {
@@ -224,7 +237,7 @@ div.layer:nth-child(6){
 .txt_base {
 	font-family: 'Suisse-Regular';
 	color: #FFF;
-	font-size: 3vw;
+	font-size: 2.8vw;
 	letter-spacing: -2%;
 	margin-bottom: 6px;
 	z-index: 10;
@@ -239,7 +252,7 @@ div.layer:nth-child(6){
 }
 
 .txt_hover:hover {
-	font-variation-settings: "EXPO" -100;
+	font-variation-settings: "EXPO" -80;
 }
 
 
@@ -256,6 +269,8 @@ div.layer:nth-child(6){
 }
 
 .tracker {
+	width: 18vw;
+	height: 18vw;
   left: 0;
   top: -20%;
 	transform: translate(calc(-50% + 200px * var(--x)), calc(-50% + 200px * var(--y)));
@@ -275,8 +290,8 @@ div.layer:nth-child(6){
 	margin: 8px 0;
 	font-family: 'Exposure';
 	color: #FFF;
-  font-size: 1.2vw;
-	font-variation-settings: "EXPO" -10;
+  font-size: 1.1vw;
+	font-variation-settings: "EXPO" 20;
 }
 
 .freccia {

@@ -1,7 +1,7 @@
 // scroll top on refresh
-// window.onbeforeunload = function () {
-//   window.scrollTo(0, 0);
-// }
+window.onbeforeunload = function () {
+  window.scrollTo(0, 0);
+}
 
 //-------------------------- shapes --------------------------//
 // $(function(){
@@ -86,6 +86,15 @@ gsap.to(".subtitle", {
   opacity: 0,
 });
 
+gsap.to("#menu", {
+  scrollTrigger: {
+    trigger: "#menu",
+    start: window.innerHeight*0.8,
+    toggleActions: "play none none reset"
+  },
+  backgroundImage: "linear-gradient(180deg, rgba(15,15,32,1) 50%, rgba(15,15,32,0) 100%)" ,
+  duration: 0.1,
+});
 
 
 const duration = 0.5;

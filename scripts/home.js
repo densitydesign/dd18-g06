@@ -1,7 +1,7 @@
 // scroll top on refresh
-window.onbeforeunload = function () {
-  window.scrollTo(0, 0);
-}
+// window.onbeforeunload = function () {
+//   window.scrollTo(0, 0);
+// }
 
 //-------------------------- shapes --------------------------//
 // $(function(){
@@ -264,19 +264,21 @@ $(function() {
 $(function() {
     $("#catalogue")
         .mouseover(function() {
-          $( '#my_image2' ).attr("src","assets/home_imgs/cover1.png");
+          $( '#my_image2' ).attr("src","assets/home_imgs/biases-catalogue.png");
           $( '#my_image2' ).css("opacity","1");
+          $( '#my_image2' ).css("animation-name","horizontal");
         })
         .mouseout(function() {
-            $( '#my_image2' ).css("opacity","0");
+          $( '#my_image2' ).css("opacity","0");
         });
 });
 
 $(function() {
     $("#atlas")
         .mouseover(function() {
-          $( '#my_image2' ).attr("src","assets/home_imgs/cover2.png");
+          $( '#my_image2' ).attr("src","assets/home_imgs/prompt-atlas.png");
           $( '#my_image2' ).css("opacity","1");
+          $( '#my_image2' ).css("animation-name","scale");
         })
         .mouseout(function() {
             $( '#my_image2' ).css("opacity","0");

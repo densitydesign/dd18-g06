@@ -5,7 +5,7 @@ function scrollTo(element) {
   window.scroll({
     behavior: 'smooth',
     left: 0,
-    top: element.offsetTop - 0.4*h
+    top: element.offsetTop - 0.25*h
   });
 }
 document.getElementById("uno").addEventListener('click', () => {
@@ -36,7 +36,7 @@ menuSx
   .append("button")
   .attr("class", "bottoniMenu")
   .attr("id", "catalogue")
-  .text("CATALOGUE")
+  .text("AI BIAS CATALOGUE")
   .on("click", function () {
   });
 
@@ -47,7 +47,7 @@ menuSx
   .append("button")
   .attr("class", "bottoniMenu")
   .attr("id", "atlas")
-  .text("ATLAS")
+  .text("PROMPT EXPLORER")
   // .on("click", function () {
   // });
 

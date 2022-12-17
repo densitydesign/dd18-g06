@@ -504,7 +504,7 @@ div.layer2:nth-child(16){
 }
 
 .second {
-	/* overflow: visible; */
+	overflow: visible;
 }
 
 
@@ -593,7 +593,7 @@ div.layer2:nth-child(16){
 	width: 100%;
 	display: flex;
 	justify-content: space-between;
-	gap: 8%;
+	gap: 8vw;
 }
 
 .catalogue {
@@ -627,4 +627,70 @@ div.layer2:nth-child(16){
 	opacity: 1;
 	visibility: visible;
 	box-shadow: 0 0 6px 6px #FFF;
+}
+
+/*-------------------------- footer ----------------------------*/
+
+footer {
+	height: 22vh;
+	position: relative;
+	margin: 8vh 12vw;
+	padding-top: 2vh;
+	display: flex;
+	gap: 4vw;
+	border-top: 1px solid #FFF;
+	box-sizing: border-box;
+}
+
+li {
+	font-family: "Suisse-Regular";
+	font-size: 0.8vw;
+	color: #FFF;
+	text-decoration: none;
+	list-style: none;
+}
+
+.title_course {
+	font-family: "Suisse-Regular";
+	font-size: 1vw;
+	color: #FFF;
+}
+
+
+.title_footer {
+	font-family: "Exposure";
+	font-size: 1vw;
+	color: #FFF;
+	font-variation-settings: -50;
+	margin-bottom: 8px;
+}
+
+#footer_sx {
+	width: 50%;
+	display: flex;
+	flex-direction: column;
+	gap: 2vh;
+}
+
+#footer_dx {
+	display: flex;
+	width: 50%;
+	justify-content: space-between;
+}
+
+#title_course {
+	display: flex;
+	gap: 2vw;
+}
+
+#loghi {
+	display: flex;
+	height: 100%;
+	width: 100%;
+	gap: 3vw;
+}
+
+#loghi img {
+	object-fit: scale-down;
+	height: 50%;
 }

@@ -186,7 +186,7 @@ body {
   gap: 15px;
   display: none;
   background: #FFFFFF;
-  box-shadow: 0 0 7px 7px rgb(255, 255, 255);
+  box-shadow: 0 0 10px 10px rgb(255, 255, 255);
 }
 
 .bottoniZoom {

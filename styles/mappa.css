@@ -166,6 +166,7 @@ body {
   gap: 0.3vh;
   background: #ffffff;
   display: none;
+  transition: all 700ms ease;
 }
 
 #biasSub {
@@ -183,6 +184,7 @@ body {
   gap: 0.3vh;
   background: #ffffff;
   display: none;
+  transition: all 700ms ease;
 }
 
 .p-bias{
@@ -201,6 +203,7 @@ body {
   justify-content: flex-start;
   padding: 1vh;
   margin-left: 0.5vw;
+  transition: all 700ms ease;
 }
 
 .menu-tendina{
@@ -217,7 +220,8 @@ body {
   z-index: 1;
   padding: 10px;
   background: #FFFFFF;
-  box-shadow: 0 0 7px 7px rgb(255, 255, 255);
+  box-shadow: 0 0 10px 10px rgb(255, 255, 255);
+  transition: all 700ms ease;
 }
 
 .casella{
@@ -225,8 +229,10 @@ body {
   font-family: 'Suisse-Regular';
   font-style: italic;
   font-size: 13px;
+  display: flex;
   align-items: center;
-  padding-top: 0.3vw;
+  justify-content: space-between;
+  padding-right: 0.5vw;
   padding-left: 0.5vw;
   width: 20vw;
   height: 3.5vh;
@@ -236,6 +242,7 @@ body {
   border-width: 1px;
   border-style: solid;
   border-color: #000000;
+  transition: all 700ms ease;
 }
 
 
@@ -252,6 +259,7 @@ body {
   padding-left: 10px;
   padding-right: 10px;
   background: #FFFFFF;
+  transition: all 700ms ease;
 }
 
 .reset {
@@ -309,6 +317,7 @@ body {
   align-items: center;
   border: none;
   background: #FFFFFF;
+  transition: all 700ms ease;
 }
 
 .bottoniBias {
@@ -427,7 +436,6 @@ body {
   /* background-color: rgb(248, 255, 180); */
   width: 19vw;
   justify-content: center;
-
 }
 
 /* .prompt:hover{
@@ -495,4 +503,9 @@ img {
   font-size: 9pt;
   padding-left: 0.3vw;
   padding-bottom: 1vh;
+}
+
+#freccia{
+  width: 1vw;
+  rotate: 0;
 }

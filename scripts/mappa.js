@@ -123,35 +123,35 @@ let biasContainer = d3.select("#bias");
 //     h = false;
 //     // diversifica visivamente il bottone attivo e cambia titolo
 //     let bottoneAll = d3.select("#bottoneBiasAll");
-//     bottoneAll.style("background", "rgba(0, 0, 0, 0.7)");
-//     bottoneAll.style("color", "white");
+//     bottoneAll.style("font-family", "Suisseintl-Bold");
+//     bottoneAll.style("text-decoration", "underline");
 //     let titolo = d3.select("#main-title");
 //     titolo.text("Explore all the biases");
 //     // resetta tutti gli altri
 //     let bottoneA = d3.select("#bottoneBiasA");
-//     bottoneA.style("background", "rgba(255, 255, 255, 0.7)");
-//     bottoneA.style("color", "black");
+//     bottoneA.style("font-family", "Suisse-Regular");
+//     bottoneA.style("text-decoration", "none");
 //     let bottoneB = d3.select("#bottoneBiasB");
-//     bottoneB.style("background", "rgba(255, 255, 255, 0.7)");
-//     bottoneB.style("color", "black");
+//     bottoneB.style("font-family", "Suisse-Regular");
+//     bottoneB.style("text-decoration", "none");
 //     let bottoneC = d3.select("#bottoneBiasC");
-//     bottoneC.style("background", "rgba(255, 255, 255, 0.7)");
-//     bottoneC.style("color", "black");
+//     bottoneC.style("font-family", "Suisse-Regular");
+//     bottoneC.style("text-decoration", "none");
 //     let bottoneD = d3.select("#bottoneBiasD");
-//     bottoneD.style("background", "rgba(255, 255, 255, 0.7)");
-//     bottoneD.style("color", "black");
+//     bottoneD.style("font-family", "Suisse-Regular");
+//     bottoneD.style("text-decoration", "none");
 //     let bottoneE = d3.select("#bottoneBiasE");
-//     bottoneE.style("background", "rgba(255, 255, 255, 0.7)");
-//     bottoneE.style("color", "black");
+//     bottoneE.style("font-family", "Suisse-Regular");
+//     bottoneE.style("text-decoration", "none");
 //     let bottoneF = d3.select("#bottoneBiasF");
-//     bottoneF.style("background", "rgba(255, 255, 255, 0.7)");
-//     bottoneF.style("color", "black");
+//     bottoneF.style("font-family", "Suisse-Regular");
+//     bottoneF.style("text-decoration", "none");
 //     let bottoneG = d3.select("#bottoneBiasG");
-//     bottoneG.style("background", "rgba(255, 255, 255, 0.7)");
-//     bottoneG.style("color", "black");
+//     bottoneG.style("font-family", "Suisse-Regular");
+//     bottoneG.style("text-decoration", "none");
 //     let bottoneH = d3.select("#bottoneBiasH");
-//     bottoneH.style("background", "rgba(255, 255, 255, 0.7)");
-//     bottoneH.style("color", "black");
+//     bottoneH.style("font-family", "Suisse-Regular");
+//     bottoneH.style("text-decoration", "none");
 //   });
 
 // crea il bottone A
@@ -179,35 +179,37 @@ biasContainer
       h = false;
       // diversifica visivamente il bottone attivo e cambia titolo
       let bottoneA = d3.select("#bottoneBiasA");
-      bottoneA.style("background", "rgba(0, 0, 0, 0.7)");
-      bottoneA.style("color", "white");
-      let titolo = d3.select("#main-title");
+      bottoneA.style("font-family", "Suisseintl-Bold");
+      bottoneA.style("text-decoration", "underline");
       // titolo.text("Bias uno...");
       // resetta tutti gli altri
       let bottoneB = d3.select("#bottoneBiasB");
-      bottoneB.style("background", "rgba(255, 255, 255, 0.7)");
-      bottoneB.style("color", "black");
+      bottoneB.style("font-family", "Suisse-Regular");
+      bottoneB.style("text-decoration", "none");
       let bottoneC = d3.select("#bottoneBiasC");
-      bottoneC.style("background", "rgba(255, 255, 255, 0.7)");
-      bottoneC.style("color", "black");
+      bottoneC.style("font-family", "Suisse-Regular");
+      bottoneC.style("text-decoration", "none");
       let bottoneD = d3.select("#bottoneBiasD");
-      bottoneD.style("background", "rgba(255, 255, 255, 0.7)");
-      bottoneD.style("color", "black");
+      bottoneD.style("font-family", "Suisse-Regular");
+      bottoneD.style("text-decoration", "none");
       let bottoneE = d3.select("#bottoneBiasE");
-      bottoneE.style("background", "rgba(255, 255, 255, 0.7)");
-      bottoneE.style("color", "black");
+      bottoneE.style("font-family", "Suisse-Regular");
+      bottoneE.style("text-decoration", "none");
       let bottoneF = d3.select("#bottoneBiasF");
-      bottoneF.style("background", "rgba(255, 255, 255, 0.7)");
-      bottoneF.style("color", "black");
+      bottoneF.style("font-family", "Suisse-Regular");
+      bottoneF.style("text-decoration", "none");
       let bottoneG = d3.select("#bottoneBiasG");
-      bottoneG.style("background", "rgba(255, 255, 255, 0.7)");
-      bottoneG.style("color", "black");
+      bottoneG.style("font-family", "Suisse-Regular");
+      bottoneG.style("text-decoration", "none");
       let bottoneH = d3.select("#bottoneBiasH");
-      bottoneH.style("background", "rgba(255, 255, 255, 0.7)");
-      bottoneH.style("color", "black");
+      bottoneH.style("font-family", "Suisse-Regular");
+      bottoneH.style("text-decoration", "none");
       let bottoneAll = d3.select("#bottoneBiasAll");
-      bottoneAll.style("background", "rgba(255, 255, 255, 0.7)");
-      bottoneAll.style("color", "black");
+      bottoneAll.style("font-family", "Suisse-Regular");
+      bottoneAll.style("text-decoration", "none");
+      let casella = d3.select("#casella");
+      casella.text("IT'S GIVING *RACISM*");
+      casella.style("font-style", "normal")
       // al secono click sul bottone, togli il filtro e mostra tutte le img
     } else if (a == true) {
       d3.selectAll(".card")
@@ -224,14 +226,15 @@ biasContainer
       g = false;
       h = false;
       // resetta formattazione bottone e titolo
-      let bottone = d3.select("#bottoneBiasA");
-      bottone.style("background", "rgba(255, 255, 255, 0.7)");
-      bottone.style("color", "black");
-      let bottoneAll = d3.select("#bottoneBiasAll");
-      bottoneAll.style("background", "rgba(0, 0, 0, 0.7)");
-      bottoneAll.style("color", "white");
-      let titolo = d3.select("#main-title");
-      titolo.text("Explore all the biases");
+      let bottoneA = d3.select("#bottoneBiasA");
+      bottoneA.style("font-family", "Suisse-Regular");
+      bottoneA.style("text-decoration", "none");
+      // let bottoneAll = d3.select("#bottoneBiasAll");
+      // bottoneAll.style("font-family", "Suisseintl-Bold");
+      // bottoneAll.style("text-decoration", "underline");
+      let casella = d3.select("#casella");
+      casella.text("- SELECT THE BIAS -");
+      casella.style("font-style", "italic")
     }
   });
 
@@ -261,35 +264,37 @@ biasContainer
 
       // diversifica visivamente il bottone attivo e cambia titolo
       let bottoneB = d3.select("#bottoneBiasB");
-      bottoneB.style("background", "rgba(0, 0, 0, 0.7)");
-      bottoneB.style("color", "white");
-      let titolo = d3.select("#main-title");
+      bottoneB.style("font-family", "Suisseintl-Bold");
+      bottoneB.style("text-decoration", "underline");
       // titolo.text("Bias due...");
       // resetta tutti gli altri
       let bottoneA = d3.select("#bottoneBiasA");
-      bottoneA.style("background", "rgba(255, 255, 255, 0.7)");
-      bottoneA.style("color", "black");
+      bottoneA.style("font-family", "Suisse-Regular");
+      bottoneA.style("text-decoration", "none");
       let bottoneC = d3.select("#bottoneBiasC");
-      bottoneC.style("background", "rgba(255, 255, 255, 0.7)");
-      bottoneC.style("color", "black");
+      bottoneC.style("font-family", "Suisse-Regular");
+      bottoneC.style("text-decoration", "none");
       let bottoneD = d3.select("#bottoneBiasD");
-      bottoneD.style("background", "rgba(255, 255, 255, 0.7)");
-      bottoneD.style("color", "black");
+      bottoneD.style("font-family", "Suisse-Regular");
+      bottoneD.style("text-decoration", "none");
       let bottoneE = d3.select("#bottoneBiasE");
-      bottoneE.style("background", "rgba(255, 255, 255, 0.7)");
-      bottoneE.style("color", "black");
+      bottoneE.style("font-family", "Suisse-Regular");
+      bottoneE.style("text-decoration", "none");
       let bottoneF = d3.select("#bottoneBiasF");
-      bottoneF.style("background", "rgba(255, 255, 255, 0.7)");
-      bottoneF.style("color", "black");
+      bottoneF.style("font-family", "Suisse-Regular");
+      bottoneF.style("text-decoration", "none");
       let bottoneG = d3.select("#bottoneBiasG");
-      bottoneG.style("background", "rgba(255, 255, 255, 0.7)");
-      bottoneG.style("color", "black");
+      bottoneG.style("font-family", "Suisse-Regular");
+      bottoneG.style("text-decoration", "none");
       let bottoneH = d3.select("#bottoneBiasH");
-      bottoneH.style("background", "rgba(255, 255, 255, 0.7)");
-      bottoneH.style("color", "black");
+      bottoneH.style("font-family", "Suisse-Regular");
+      bottoneH.style("text-decoration", "none");
       let bottoneAll = d3.select("#bottoneBiasAll");
-      bottoneAll.style("background", "rgba(255, 255, 255, 0.7)");
-      bottoneAll.style("color", "black");
+      bottoneAll.style("font-family", "Suisse-Regular");
+      bottoneAll.style("text-decoration", "none");
+      let casella = d3.select("#casella");
+      casella.text("BIG GREEN DREAM TEAM");
+      casella.style("font-style", "normal")
       // al secono click sul bottone, togli il filtro e mostra tutte le img
     } else if (b == true) {
       d3.selectAll(".card")
@@ -308,13 +313,14 @@ biasContainer
 
       // resetta formattazione bottone e titolo
       let bottone = d3.select("#bottoneBiasB");
-      bottone.style("background", "rgba(255, 255, 255, 0.7)");
-      bottone.style("color", "black");
-      let bottoneAll = d3.select("#bottoneBiasAll");
-      bottoneAll.style("background", "rgba(0, 0, 0, 0.7)");
-      bottoneAll.style("color", "white");
-      let titolo = d3.select("#main-title");
-      titolo.text("Explore all the biases");
+      bottone.style("font-family", "Suisse-Regular");
+      bottone.style("text-decoration", "none");
+      // let bottoneAll = d3.select("#bottoneBiasAll");
+      // bottoneAll.style("font-family", "Suisseintl-Bold");
+      // bottoneAll.style("text-decoration", "underline");
+      let casella = d3.select("#casella");
+      casella.text("- SELECT THE BIAS -");
+      casella.style("font-style", "italic")
     }
   });
 
@@ -344,35 +350,37 @@ biasContainer
 
       // diversifica visivamente il bottone attivo e cambia titolo
       let bottoneC = d3.select("#bottoneBiasC");
-      bottoneC.style("background", "rgba(0, 0, 0, 0.7)");
-      bottoneC.style("color", "white");
-      let titolo = d3.select("#main-title");
+      bottoneC.style("font-family", "Suisseintl-Bold");
+      bottoneC.style("text-decoration", "underline");
       // titolo.text("Bias tre...");
       // resetta tutti gli altri
       let bottoneA = d3.select("#bottoneBiasA");
-      bottoneA.style("background", "rgba(255, 255, 255, 0.7)");
-      bottoneA.style("color", "black");
+      bottoneA.style("font-family", "Suisse-Regular");
+      bottoneA.style("text-decoration", "none");
       let bottoneB = d3.select("#bottoneBiasB");
-      bottoneB.style("background", "rgba(255, 255, 255, 0.7)");
-      bottoneB.style("color", "black");
+      bottoneB.style("font-family", "Suisse-Regular");
+      bottoneB.style("text-decoration", "none");
       let bottoneD = d3.select("#bottoneBiasD");
-      bottoneD.style("background", "rgba(255, 255, 255, 0.7)");
-      bottoneD.style("color", "black");
+      bottoneD.style("font-family", "Suisse-Regular");
+      bottoneD.style("text-decoration", "none");
       let bottoneE = d3.select("#bottoneBiasE");
-      bottoneE.style("background", "rgba(255, 255, 255, 0.7)");
-      bottoneE.style("color", "black");
+      bottoneE.style("font-family", "Suisse-Regular");
+      bottoneE.style("text-decoration", "none");
       let bottoneF = d3.select("#bottoneBiasF");
-      bottoneF.style("background", "rgba(255, 255, 255, 0.7)");
-      bottoneF.style("color", "black");
+      bottoneF.style("font-family", "Suisse-Regular");
+      bottoneF.style("text-decoration", "none");
       let bottoneG = d3.select("#bottoneBiasG");
-      bottoneG.style("background", "rgba(255, 255, 255, 0.7)");
-      bottoneG.style("color", "black");
+      bottoneG.style("font-family", "Suisse-Regular");
+      bottoneG.style("text-decoration", "none");
       let bottoneH = d3.select("#bottoneBiasH");
-      bottoneH.style("background", "rgba(255, 255, 255, 0.7)");
-      bottoneH.style("color", "black");
+      bottoneH.style("font-family", "Suisse-Regular");
+      bottoneH.style("text-decoration", "none");
       let bottoneAll = d3.select("#bottoneBiasAll");
-      bottoneAll.style("background", "rgba(255, 255, 255, 0.7)");
-      bottoneAll.style("color", "black");
+      bottoneAll.style("font-family", "Suisse-Regular");
+      bottoneAll.style("text-decoration", "none");
+      let casella = d3.select("#casella");
+      casella.text("LANDSCAPE DÉJÀ VU");
+      casella.style("font-style", "normal")
       // al secono click sul bottone, togli il filtro e mostra tutte le img
     } else if (c == true) {
       d3.selectAll(".card")
@@ -391,13 +399,14 @@ biasContainer
 
       // resetta formattazione bottone e titolo
       let bottone = d3.select("#bottoneBiasC");
-      bottone.style("background", "rgba(255, 255, 255, 0.7)");
-      bottone.style("color", "black");
-      let bottoneAll = d3.select("#bottoneBiasAll");
-      bottoneAll.style("background", "rgba(0, 0, 0, 0.7)");
-      bottoneAll.style("color", "white");
-      let titolo = d3.select("#main-title");
-      titolo.text("Explore all the biases");
+      bottone.style("font-family", "Suisse-Regular");
+      bottone.style("text-decoration", "none");
+      // let bottoneAll = d3.select("#bottoneBiasAll");
+      // bottoneAll.style("font-family", "Suisseintl-Bold");
+      // bottoneAll.style("text-decoration", "underline");
+      let casella = d3.select("#casella");
+      casella.text("- SELECT THE BIAS -");
+      casella.style("font-style", "italic")
     }
   });
 
@@ -427,35 +436,38 @@ biasContainer
 
       // diversifica visivamente il bottone attivo e cambia titolo
       let bottoneD = d3.select("#bottoneBiasD");
-      bottoneD.style("background", "rgba(0, 0, 0, 0.7)");
-      bottoneD.style("color", "white");
+      bottoneD.style("font-family", "Suisseintl-Bold");
+      bottoneD.style("text-decoration", "underline");
       let titolo = d3.select("#main-title");
       // titolo.text("Bias quattro...");
       // resetta tutti gli altri
       let bottoneA = d3.select("#bottoneBiasA");
-      bottoneA.style("background", "rgba(255, 255, 255, 0.7)");
-      bottoneA.style("color", "black");
+      bottoneA.style("font-family", "Suisse-Regular");
+      bottoneA.style("text-decoration", "none");
       let bottoneB = d3.select("#bottoneBiasB");
-      bottoneB.style("background", "rgba(255, 255, 255, 0.7)");
-      bottoneB.style("color", "black");
+      bottoneB.style("font-family", "Suisse-Regular");
+      bottoneB.style("text-decoration", "none");
       let bottoneC = d3.select("#bottoneBiasC");
-      bottoneC.style("background", "rgba(255, 255, 255, 0.7)");
-      bottoneC.style("color", "black");
+      bottoneC.style("font-family", "Suisse-Regular");
+      bottoneC.style("text-decoration", "none");
       let bottoneE = d3.select("#bottoneBiasE");
-      bottoneE.style("background", "rgba(255, 255, 255, 0.7)");
-      bottoneE.style("color", "black");
+      bottoneE.style("font-family", "Suisse-Regular");
+      bottoneE.style("text-decoration", "none");
       let bottoneF = d3.select("#bottoneBiasF");
-      bottoneF.style("background", "rgba(255, 255, 255, 0.7)");
-      bottoneF.style("color", "black");
+      bottoneF.style("font-family", "Suisse-Regular");
+      bottoneF.style("text-decoration", "none");
       let bottoneG = d3.select("#bottoneBiasG");
-      bottoneG.style("background", "rgba(255, 255, 255, 0.7)");
-      bottoneG.style("color", "black");
+      bottoneG.style("font-family", "Suisse-Regular");
+      bottoneG.style("text-decoration", "none");
       let bottoneH = d3.select("#bottoneBiasH");
-      bottoneH.style("background", "rgba(255, 255, 255, 0.7)");
-      bottoneH.style("color", "black");
+      bottoneH.style("font-family", "Suisse-Regular");
+      bottoneH.style("text-decoration", "none");
       let bottoneAll = d3.select("#bottoneBiasAll");
-      bottoneAll.style("background", "rgba(255, 255, 255, 0.7)");
-      bottoneAll.style("color", "black");
+      bottoneAll.style("font-family", "Suisse-Regular");
+      bottoneAll.style("text-decoration", "none");
+      let casella = d3.select("#casella");
+      casella.text("SOLUTIONS, BUT GREENWASHED");
+      casella.style("font-style", "normal")
       // al secono click sul bottone, togli il filtro e mostra tutte le img
     } else if (d == true) {
       d3.selectAll(".card")
@@ -474,13 +486,14 @@ biasContainer
 
       // resetta formattazione bottone e titolo
       let bottone = d3.select("#bottoneBiasD");
-      bottone.style("background", "rgba(255, 255, 255, 0.7)");
-      bottone.style("color", "black");
-      let bottoneAll = d3.select("#bottoneBiasAll");
-      bottoneAll.style("background", "rgba(0, 0, 0, 0.7)");
-      bottoneAll.style("color", "white");
-      let titolo = d3.select("#main-title");
-      titolo.text("Explore all the biases");
+      bottone.style("font-family", "Suisse-Regular");
+      bottone.style("text-decoration", "none");
+      // let bottoneAll = d3.select("#bottoneBiasAll");
+      // bottoneAll.style("font-family", "Suisseintl-Bold");
+      // bottoneAll.style("text-decoration", "underline");
+      let casella = d3.select("#casella");
+      casella.text("- SELECT THE BIAS -");
+      casella.style("font-style", "italic")
     }
   });
 
@@ -510,35 +523,38 @@ biasContainer
 
       // diversifica visivamente il bottone attivo e cambia titolo
       let bottoneE = d3.select("#bottoneBiasE");
-      bottoneE.style("background", "rgba(0, 0, 0, 0.7)");
-      bottoneE.style("color", "white");
+      bottoneE.style("font-family", "Suisseintl-Bold");
+      bottoneE.style("text-decoration", "underline");
       let titolo = d3.select("#main-title");
       // titolo.text("Bias cinque...");
       // resetta tutti gli altri
       let bottoneA = d3.select("#bottoneBiasA");
-      bottoneA.style("background", "rgba(255, 255, 255, 0.7)");
-      bottoneA.style("color", "black");
+      bottoneA.style("font-family", "Suisse-Regular");
+      bottoneA.style("text-decoration", "none");
       let bottoneB = d3.select("#bottoneBiasB");
-      bottoneB.style("background", "rgba(255, 255, 255, 0.7)");
-      bottoneB.style("color", "black");
+      bottoneB.style("font-family", "Suisse-Regular");
+      bottoneB.style("text-decoration", "none");
       let bottoneC = d3.select("#bottoneBiasC");
-      bottoneC.style("background", "rgba(255, 255, 255, 0.7)");
-      bottoneC.style("color", "black");
+      bottoneC.style("font-family", "Suisse-Regular");
+      bottoneC.style("text-decoration", "none");
       let bottoneD = d3.select("#bottoneBiasD");
-      bottoneD.style("background", "rgba(255, 255, 255, 0.7)");
-      bottoneD.style("color", "black");
+      bottoneD.style("font-family", "Suisse-Regular");
+      bottoneD.style("text-decoration", "none");
       let bottoneF = d3.select("#bottoneBiasF");
-      bottoneF.style("background", "rgba(255, 255, 255, 0.7)");
-      bottoneF.style("color", "black");
+      bottoneF.style("font-family", "Suisse-Regular");
+      bottoneF.style("text-decoration", "none");
       let bottoneG = d3.select("#bottoneBiasG");
-      bottoneG.style("background", "rgba(255, 255, 255, 0.7)");
-      bottoneG.style("color", "black");
+      bottoneG.style("font-family", "Suisse-Regular");
+      bottoneG.style("text-decoration", "none");
       let bottoneH = d3.select("#bottoneBiasH");
-      bottoneH.style("background", "rgba(255, 255, 255, 0.7)");
-      bottoneH.style("color", "black");
+      bottoneH.style("font-family", "Suisse-Regular");
+      bottoneH.style("text-decoration", "none");
       let bottoneAll = d3.select("#bottoneBiasAll");
-      bottoneAll.style("background", "rgba(255, 255, 255, 0.7)");
-      bottoneAll.style("color", "black");
+      bottoneAll.style("font-family", "Suisse-Regular");
+      bottoneAll.style("text-decoration", "none");
+      let casella = d3.select("#casella");
+      casella.text("CLIMATE PATCHWORK");
+      casella.style("font-style", "normal")
       // al secono click sul bottone, togli il filtro e mostra tutte le img
     } else if (e == true) {
       d3.selectAll(".card")
@@ -557,13 +573,14 @@ biasContainer
 
       // resetta formattazione bottone e titolo
       let bottone = d3.select("#bottoneBiasE");
-      bottone.style("background", "rgba(255, 255, 255, 0.7)");
-      bottone.style("color", "black");
-      let bottoneAll = d3.select("#bottoneBiasAll");
-      bottoneAll.style("background", "rgba(0, 0, 0, 0.7)");
-      bottoneAll.style("color", "white");
-      let titolo = d3.select("#main-title");
-      titolo.text("Explore all the biases");
+      bottone.style("font-family", "Suisse-Regular");
+      bottone.style("text-decoration", "none");
+      // let bottoneAll = d3.select("#bottoneBiasAll");
+      // bottoneAll.style("font-family", "Suisseintl-Bold");
+      // bottoneAll.style("text-decoration", "underline");
+      let casella = d3.select("#casella");
+      casella.text("- SELECT THE BIAS -");
+      casella.style("font-style", "italic")
     }
   });
 
@@ -592,35 +609,38 @@ biasContainer
       h = false;
       // diversifica visivamente il bottone attivo e cambia titolo
       let bottoneF = d3.select("#bottoneBiasF");
-      bottoneF.style("background", "rgba(0, 0, 0, 0.7)");
-      bottoneF.style("color", "white");
+      bottoneF.style("font-family", "Suisseintl-Bold");
+      bottoneF.style("text-decoration", "underline");
       let titolo = d3.select("#main-title");
       // titolo.text("Bias sei...");
       // resetta tutti gli altri
       let bottoneA = d3.select("#bottoneBiasA");
-      bottoneA.style("background", "rgba(255, 255, 255, 0.7)");
-      bottoneA.style("color", "black");
+      bottoneA.style("font-family", "Suisse-Regular");
+      bottoneA.style("text-decoration", "none");
       let bottoneB = d3.select("#bottoneBiasB");
-      bottoneB.style("background", "rgba(255, 255, 255, 0.7)");
-      bottoneB.style("color", "black");
+      bottoneB.style("font-family", "Suisse-Regular");
+      bottoneB.style("text-decoration", "none");
       let bottoneC = d3.select("#bottoneBiasC");
-      bottoneC.style("background", "rgba(255, 255, 255, 0.7)");
-      bottoneC.style("color", "black");
+      bottoneC.style("font-family", "Suisse-Regular");
+      bottoneC.style("text-decoration", "none");
       let bottoneD = d3.select("#bottoneBiasD");
-      bottoneD.style("background", "rgba(255, 255, 255, 0.7)");
-      bottoneD.style("color", "black");
+      bottoneD.style("font-family", "Suisse-Regular");
+      bottoneD.style("text-decoration", "none");
       let bottoneE = d3.select("#bottoneBiasE");
-      bottoneE.style("background", "rgba(255, 255, 255, 0.7)");
-      bottoneE.style("color", "black");
+      bottoneE.style("font-family", "Suisse-Regular");
+      bottoneE.style("text-decoration", "none");
       let bottoneG = d3.select("#bottoneBiasG");
-      bottoneG.style("background", "rgba(255, 255, 255, 0.7)");
-      bottoneG.style("color", "black");
+      bottoneG.style("font-family", "Suisse-Regular");
+      bottoneG.style("text-decoration", "none");
       let bottoneH = d3.select("#bottoneBiasH");
-      bottoneH.style("background", "rgba(255, 255, 255, 0.7)");
-      bottoneH.style("color", "black");
+      bottoneH.style("font-family", "Suisse-Regular");
+      bottoneH.style("text-decoration", "none");
       let bottoneAll = d3.select("#bottoneBiasAll");
-      bottoneAll.style("background", "rgba(255, 255, 255, 0.7)");
-      bottoneAll.style("color", "black");
+      bottoneAll.style("font-family", "Suisse-Regular");
+      bottoneAll.style("text-decoration", "none");
+      let casella = d3.select("#casella");
+      casella.text("SCRIPTS BEFORE PICS");
+      casella.style("font-style", "normal")
       // al secono click sul bottone, togli il filtro e mostra tutte le img
     } else if (f == true) {
       d3.selectAll(".card")
@@ -638,13 +658,14 @@ biasContainer
       h = false;
       // resetta formattazione bottone e titolo
       let bottone = d3.select("#bottoneBiasF");
-      bottone.style("background", "rgba(255, 255, 255, 0.7)");
-      bottone.style("color", "black");
-      let bottoneAll = d3.select("#bottoneBiasAll");
-      bottoneAll.style("background", "rgba(0, 0, 0, 0.7)");
-      bottoneAll.style("color", "white");
-      let titolo = d3.select("#main-title");
-      titolo.text("Explore all the biases");
+      bottone.style("font-family", "Suisse-Regular");
+      bottone.style("text-decoration", "none");
+      // let bottoneAll = d3.select("#bottoneBiasAll");
+      // bottoneAll.style("font-family", "Suisseintl-Bold");
+      // bottoneAll.style("text-decoration", "underline");
+      let casella = d3.select("#casella");
+      casella.text("- SELECT THE BIAS -");
+      casella.style("font-style", "italic")
     }
   });
 
@@ -673,35 +694,38 @@ biasContainer
       h = false;
       // diversifica visivamente il bottone attivo e cambia titolo
       let bottoneG = d3.select("#bottoneBiasG");
-      bottoneG.style("background", "rgba(0, 0, 0, 0.7)");
-      bottoneG.style("color", "white");
+      bottoneG.style("font-family", "Suisseintl-Bold");
+      bottoneG.style("text-decoration", "underline");
       let titolo = d3.select("#main-title");
       // titolo.text("Bias sette...");
       // resetta tutti gli altri
       let bottoneA = d3.select("#bottoneBiasA");
-      bottoneA.style("background", "rgba(255, 255, 255, 0.7)");
-      bottoneA.style("color", "black");
+      bottoneA.style("font-family", "Suisse-Regular");
+      bottoneA.style("text-decoration", "none");
       let bottoneB = d3.select("#bottoneBiasB");
-      bottoneB.style("background", "rgba(255, 255, 255, 0.7)");
-      bottoneB.style("color", "black");
+      bottoneB.style("font-family", "Suisse-Regular");
+      bottoneB.style("text-decoration", "none");
       let bottoneC = d3.select("#bottoneBiasC");
-      bottoneC.style("background", "rgba(255, 255, 255, 0.7)");
-      bottoneC.style("color", "black");
+      bottoneC.style("font-family", "Suisse-Regular");
+      bottoneC.style("text-decoration", "none");
       let bottoneD = d3.select("#bottoneBiasD");
-      bottoneD.style("background", "rgba(255, 255, 255, 0.7)");
-      bottoneD.style("color", "black");
+      bottoneD.style("font-family", "Suisse-Regular");
+      bottoneD.style("text-decoration", "none");
       let bottoneE = d3.select("#bottoneBiasE");
-      bottoneE.style("background", "rgba(255, 255, 255, 0.7)");
-      bottoneE.style("color", "black");
+      bottoneE.style("font-family", "Suisse-Regular");
+      bottoneE.style("text-decoration", "none");
       let bottoneF = d3.select("#bottoneBiasF");
-      bottoneF.style("background", "rgba(255, 255, 255, 0.7)");
-      bottoneF.style("color", "black");
+      bottoneF.style("font-family", "Suisse-Regular");
+      bottoneF.style("text-decoration", "none");
       let bottoneH = d3.select("#bottoneBiasH");
-      bottoneH.style("background", "rgba(255, 255, 255, 0.7)");
-      bottoneH.style("color", "black");
+      bottoneH.style("font-family", "Suisse-Regular");
+      bottoneH.style("text-decoration", "none");
       let bottoneAll = d3.select("#bottoneBiasAll");
-      bottoneAll.style("background", "rgba(255, 255, 255, 0.7)");
-      bottoneAll.style("color", "black");
+      bottoneAll.style("font-family", "Suisse-Regular");
+      bottoneAll.style("text-decoration", "none");
+      let casella = d3.select("#casella");
+      casella.text("DOWN TO EARTH");
+      casella.style("font-style", "normal")
       // al secono click sul bottone, togli il filtro e mostra tutte le img
     } else if (g == true) {
       d3.selectAll(".card")
@@ -719,13 +743,14 @@ biasContainer
       h = false;
       // resetta formattazione bottone e titolo
       let bottone = d3.select("#bottoneBiasG");
-      bottone.style("background", "rgba(255, 255, 255, 0.7)");
-      bottone.style("color", "black");
-      let bottoneAll = d3.select("#bottoneBiasAll");
-      bottoneAll.style("background", "rgba(0, 0, 0, 0.7)");
-      bottoneAll.style("color", "white");
-      let titolo = d3.select("#main-title");
-      titolo.text("Explore all the biases");
+      bottone.style("font-family", "Suisse-Regular");
+      bottone.style("text-decoration", "none");
+      // let bottoneAll = d3.select("#bottoneBiasAll");
+      // bottoneAll.style("font-family", "Suisseintl-Bold");
+      // bottoneAll.style("text-decoration", "underline");
+      let casella = d3.select("#casella");
+      casella.text("- SELECT THE BIAS -");
+      casella.style("font-style", "italic")
     }
   });
 
@@ -756,35 +781,38 @@ biasContainer
 
     // diversifica visivamente il bottone attivo e cambia titolo
     let bottoneH = d3.select("#bottoneBiasH");
-    bottoneH.style("background", "rgba(0, 0, 0, 0.7)");
-    bottoneH.style("color", "white");
+    bottoneH.style("font-family", "Suisseintl-Bold");
+    bottoneH.style("text-decoration", "underline");
     // let titolo = d3.select("#main-title");
     // titolo.text("Bias sette...");
     // resetta tutti gli altri
     let bottoneA = d3.select("#bottoneBiasA");
-    bottoneA.style("background", "rgba(255, 255, 255, 0.7)");
-    bottoneA.style("color", "black");
+    bottoneA.style("font-family", "Suisse-Regular");
+    bottoneA.style("text-decoration", "none");
     let bottoneB = d3.select("#bottoneBiasB");
-    bottoneB.style("background", "rgba(255, 255, 255, 0.7)");
-    bottoneB.style("color", "black");
+    bottoneB.style("font-family", "Suisse-Regular");
+    bottoneB.style("text-decoration", "none");
     let bottoneC = d3.select("#bottoneBiasC");
-    bottoneC.style("background", "rgba(255, 255, 255, 0.7)");
-    bottoneC.style("color", "black");
+    bottoneC.style("font-family", "Suisse-Regular");
+    bottoneC.style("text-decoration", "none");
     let bottoneD = d3.select("#bottoneBiasD");
-    bottoneD.style("background", "rgba(255, 255, 255, 0.7)");
-    bottoneD.style("color", "black");
+    bottoneD.style("font-family", "Suisse-Regular");
+    bottoneD.style("text-decoration", "none");
     let bottoneE = d3.select("#bottoneBiasE");
-    bottoneE.style("background", "rgba(255, 255, 255, 0.7)");
-    bottoneE.style("color", "black");
+    bottoneE.style("font-family", "Suisse-Regular");
+    bottoneE.style("text-decoration", "none");
     let bottoneF = d3.select("#bottoneBiasF");
-    bottoneF.style("background", "rgba(255, 255, 255, 0.7)");
-    bottoneF.style("color", "black");
+    bottoneF.style("font-family", "Suisse-Regular");
+    bottoneF.style("text-decoration", "none");
     let bottoneG = d3.select("#bottoneBiasG");
-    bottoneG.style("background", "rgba(255, 255, 255, 0.7)");
-    bottoneG.style("color", "black");
+    bottoneG.style("font-family", "Suisse-Regular");
+    bottoneG.style("text-decoration", "none");
     let bottoneAll = d3.select("#bottoneBiasAll");
-    bottoneAll.style("background", "rgba(255, 255, 255, 0.7)");
-    bottoneAll.style("color", "black");
+    bottoneAll.style("font-family", "Suisse-Regular");
+    bottoneAll.style("text-decoration", "none");
+    let casella = d3.select("#casella");
+    casella.text("NONSENSE OUT OF HAND");
+    casella.style("font-style", "normal")
     // al secono click sul bottone, togli il filtro e mostra tutte le img
   } else if (h == true) {
     d3.selectAll(".card")
@@ -802,11 +830,11 @@ biasContainer
     h = false;
     // resetta formattazione bottone e titolo
     let bottone = d3.select("#bottoneBiasH");
-    bottone.style("background", "rgba(255, 255, 255, 0.7)");
-    bottone.style("color", "black");
+    bottone.style("font-family", "Suisse-Regular");
+    bottone.style("text-decoration", "none");
     let bottoneAll = d3.select("#bottoneBiasAll");
-    bottoneAll.style("background", "rgba(0, 0, 0, 0.7)");
-    bottoneAll.style("color", "white");
+    bottoneAll.style("font-family", "Suisseintl-Bold");
+    bottoneAll.style("text-decoration", "underline");
     let titolo = d3.select("#main-title");
     titolo.text("Explore all the biases");
   }
@@ -872,3 +900,30 @@ menuDx
   .text("ABOUT");
 // .on("click", function () {
 // });
+
+
+let n = false;
+function apri() {
+    if (n == false) {
+      let bias = d3.select("#bias");
+      bias.style("display", "flex");
+      let biasSub = d3.select("#biasSub");
+      biasSub.style("display", "flex");
+      let menuTendina = d3.select("#menuTendina");
+      menuTendina.style("top", "62vh");
+      let casella = d3.select("#casella");
+      casella.style("margin-left", "13vw");
+      n = true; 
+
+    } else if (n == true) {
+      let bias = d3.select("#bias");
+      bias.style("display", "none");
+      let biasSub = d3.select("#biasSub");
+      biasSub.style("display", "none");
+      let menuTendina = d3.select("#menuTendina");
+      menuTendina.style("top", "90vh");
+      let casella = d3.select("#casella");
+      casella.style("margin-left", "15px");
+      n = false;
+    }
+  }

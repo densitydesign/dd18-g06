@@ -36,7 +36,7 @@ menuSx
   .append("button")
   .attr("class", "bottoniMenu")
   .attr("id", "catalogue")
-  .text("AI BIAS CATALOGUE")
+  .text("BIAS CATALOGUE")
   .on("click", function () {
   });
 

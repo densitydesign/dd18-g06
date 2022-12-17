@@ -848,7 +848,7 @@ menuSx
   .append("button")
   .attr("class", "bottoniMenu")
   .attr("id", "catalogue")
-  .text("CATALOGUE")
+  .text("BIAS CATALOGUE")
   .on("click", function () {});
 
 // crea il bottone ATLAS
@@ -858,7 +858,7 @@ menuSx
   .append("button")
   .attr("class", "bottoniMenu")
   .attr("id", "atlas")
-  .text("ATLAS");
+  .text("PROMPT EXPLORER");
 // .on("click", function () {
 // });
 

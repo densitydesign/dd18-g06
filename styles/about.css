@@ -199,7 +199,7 @@ section {
   position: -webkit-sticky;
   display: flex;
   align-self: flex-start;
-  top: 40%;
+  top: 25%;
 }
 
 
@@ -282,7 +282,7 @@ main {
 }
 
 .navBar {
-  top: 40%;
+  top: 25%;
   right: 12vw;
   width: 20%;
   margin-left: 10%;

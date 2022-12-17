@@ -151,11 +151,11 @@ body {
   text-decoration: underline;
 }
 
-.bias {
+#bias {
   /* position: absolute; */
   left: 2vh;
   z-index: 1;
-  width: auto;
+  width: 17vw;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -165,9 +165,10 @@ body {
   padding: 1vh;
   gap: 0.3vh;
   background: #ffffff;
+  display: none;
 }
 
-.bias-sub {
+#biasSub {
   /* position: absolute; */
   z-index: 1;
   width: auto;
@@ -181,6 +182,7 @@ body {
   padding-left: 2vw;
   gap: 0.3vh;
   background: #ffffff;
+  display: none;
 }
 
 .p-bias{
@@ -192,8 +194,8 @@ body {
 }
 
 .box-filtro{
-  height: 5vh;
-  width: 37vw;
+  height: 5.5vh;
+  width: auto;
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
@@ -203,7 +205,8 @@ body {
 
 .menu-tendina{
   position: absolute;
-  top: 60vh;
+  top: 90vh;
+  /* top: 62vh; */
   left: 2vh;
   z-index: 1;
   width: auto;
@@ -218,14 +221,15 @@ body {
 }
 
 .casella{
-  margin-left: 8.5vw;
+  margin-left: 15px;
   font-family: 'Suisse-Regular';
+  font-style: italic;
   font-size: 13px;
   align-items: center;
-  padding-top: 0.2vw;
+  padding-top: 0.3vw;
   padding-left: 0.5vw;
   width: 20vw;
-  height: 3vh;
+  height: 3.5vh;
   border: none;
   cursor: pointer;
   background: #FFFFFF;
@@ -299,7 +303,7 @@ body {
 .filter-by{
   font-family: 'Suisse-Regular';
   font-size: 13px;
-  width: 10vw;
+  width: auto;
   height: 3vh;
   display: flex;
   align-items: center;

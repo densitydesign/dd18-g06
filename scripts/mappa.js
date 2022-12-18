@@ -213,7 +213,7 @@ biasContainer
       casella.append("img")
       .attr("src", "/assets/svg/freccia_nera.svg")
       .attr("id", "freccia")
-      .style("rotate", "-90deg")
+      .style("rotate", "90deg")
 
       // al secono click sul bottone, togli il filtro e mostra tutte le img
     } else if (a == true) {
@@ -243,7 +243,7 @@ biasContainer
       casella.append("img")
       .attr("src", "/assets/svg/freccia_nera.svg")
       .attr("id", "freccia")
-      .style("rotate", "-90deg")
+      .style("rotate", "90deg")
     }
   });
 
@@ -307,7 +307,7 @@ biasContainer
       casella.append("img")
       .attr("src", "/assets/svg/freccia_nera.svg")
       .attr("id", "freccia")
-      .style("rotate", "-90deg")
+      .style("rotate", "90deg")
             // al secono click sul bottone, togli il filtro e mostra tutte le img
     } else if (b == true) {
       d3.selectAll(".card")
@@ -337,7 +337,7 @@ biasContainer
       casella.append("img")
       .attr("src", "/assets/svg/freccia_nera.svg")
       .attr("id", "freccia")
-      .style("rotate", "-90deg")
+      .style("rotate", "90deg")
         }
   });
 
@@ -401,7 +401,7 @@ biasContainer
       casella.append("img")
       .attr("src", "/assets/svg/freccia_nera.svg")
       .attr("id", "freccia")
-      .style("rotate", "-90deg")
+      .style("rotate", "90deg")
             // al secono click sul bottone, togli il filtro e mostra tutte le img
     } else if (c == true) {
       d3.selectAll(".card")
@@ -431,7 +431,7 @@ biasContainer
       casella.append("img")
       .attr("src", "/assets/svg/freccia_nera.svg")
       .attr("id", "freccia")
-      .style("rotate", "-90deg")
+      .style("rotate", "90deg")
         }
   });
 
@@ -496,7 +496,7 @@ biasContainer
       casella.append("img")
       .attr("src", "/assets/svg/freccia_nera.svg")
       .attr("id", "freccia")
-      .style("rotate", "-90deg")
+      .style("rotate", "90deg")
             // al secono click sul bottone, togli il filtro e mostra tutte le img
     } else if (d == true) {
       d3.selectAll(".card")
@@ -526,7 +526,7 @@ biasContainer
       casella.append("img")
       .attr("src", "/assets/svg/freccia_nera.svg")
       .attr("id", "freccia")
-      .style("rotate", "-90deg")
+      .style("rotate", "90deg")
         }
   });
 
@@ -591,7 +591,7 @@ biasContainer
       casella.append("img")
       .attr("src", "/assets/svg/freccia_nera.svg")
       .attr("id", "freccia")
-      .style("rotate", "-90deg")
+      .style("rotate", "90deg")
             // al secono click sul bottone, togli il filtro e mostra tutte le img
     } else if (e == true) {
       d3.selectAll(".card")
@@ -621,7 +621,7 @@ biasContainer
       casella.append("img")
       .attr("src", "/assets/svg/freccia_nera.svg")
       .attr("id", "freccia")
-      .style("rotate", "-90deg")
+      .style("rotate", "90deg")
         }
   });
 
@@ -685,7 +685,7 @@ biasContainer
       casella.append("img")
       .attr("src", "/assets/svg/freccia_nera.svg")
       .attr("id", "freccia")
-      .style("rotate", "-90deg")
+      .style("rotate", "90deg")
             // al secono click sul bottone, togli il filtro e mostra tutte le img
     } else if (f == true) {
       d3.selectAll(".card")
@@ -714,7 +714,7 @@ biasContainer
       casella.append("img")
       .attr("src", "/assets/svg/freccia_nera.svg")
       .attr("id", "freccia")
-      .style("rotate", "-90deg")
+      .style("rotate", "90deg")
         }
   });
 
@@ -778,7 +778,7 @@ biasContainer
       casella.append("img")
       .attr("src", "/assets/svg/freccia_nera.svg")
       .attr("id", "freccia")
-      .style("rotate", "-90deg")
+      .style("rotate", "90deg")
             // al secono click sul bottone, togli il filtro e mostra tutte le img
     } else if (g == true) {
       d3.selectAll(".card")
@@ -807,7 +807,7 @@ biasContainer
       casella.append("img")
       .attr("src", "/assets/svg/freccia_nera.svg")
       .attr("id", "freccia")
-      .style("rotate", "-90deg")
+      .style("rotate", "90deg")
         }
   });
 
@@ -873,7 +873,7 @@ biasContainer
     casella.append("img")
     .attr("src", "/assets/svg/freccia_nera.svg")
     .attr("id", "freccia")
-    .style("rotate", "-90deg")
+    .style("rotate", "90deg")
     // al secono click sul bottone, togli il filtro e mostra tutte le img
   } else if (h == true) {
     d3.selectAll(".card")
@@ -902,7 +902,7 @@ biasContainer
     casella.append("img")
     .attr("src", "/assets/svg/freccia_nera.svg")
     .attr("id", "freccia")
-    .style("rotate", "-90deg")
+    .style("rotate", "90deg")
   }
 });
 
@@ -980,7 +980,7 @@ function apri() {
       let casella = d3.select("#casella");
       casella.style("margin-left", "13vw");
       let freccia = d3.select("#freccia");
-      freccia.style("rotate", "-90deg");
+      freccia.style("rotate", "90deg");
       n = true; 
 
     } else if (n == true) {
@@ -993,7 +993,7 @@ function apri() {
       let casella = d3.select("#casella");
       casella.style("margin-left", "15px");
       let freccia = d3.select("#freccia");
-      freccia.style("rotate", "0deg");
+      freccia.style("rotate", "-90deg");
       n = false;
     }
   }

@@ -218,10 +218,9 @@ body {
 .menu-tendina{
   position: absolute;
   top: 90vh;
-  /* top: 62vh; */
   left: 2vh;
   z-index: 1;
-  width: auto;
+  /* width: 40vw; */
   display: flex;
   justify-content: flex-start;
   flex-direction: column;
@@ -311,7 +310,7 @@ body {
 .bottoneReset:hover {
   font-family: 'Suisse-Regular';
   font-size: 14px;
-  width: auto;
+  width: 8vw;
   height: 3.5vh;
   padding-left: 0.5vw;
   padding-right: 0.5vw;
@@ -523,5 +522,10 @@ img {
 
 #freccia{
   width: 1vw;
+<<<<<<< Updated upstream
   rotate: 0;
 }
+=======
+  rotate: -90deg;
+}
+>>>>>>> Stashed changes

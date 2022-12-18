@@ -48,7 +48,7 @@ function PanZoom ( targetEl, containerEl, opts ) {
 resetContainer
   .append("button")
   .attr("class", "bottoneReset")
-  .text("RESET ZOOM")
+  .text("RESET VIEW")
   // al click, resetta e mostra solo le immagini A
   .on("click", function () {
 	reset ()

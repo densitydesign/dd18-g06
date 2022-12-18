@@ -189,7 +189,7 @@ body {
   height: auto;
   z-index: 1;
   padding: 1vh;
-  padding-left: 10px;
+  padding-left: 12px;
   gap: 0.3vh;
   background: #ffffff;
   display: none;
@@ -209,24 +209,25 @@ body {
   width: auto;
   display: flex;
   flex-direction: row;
+  justify-content: center;
   justify-content: flex-start;
-  padding: 1vh;
-  margin-left: 0.5vw;
+  padding: 10px;
   transition: all 700ms ease;
 }
+
 
 .menu-tendina{
   position: absolute;
   top: 90vh;
   left: 2vh;
   z-index: 1;
-  width: 36vw;
+  width: 35.2vw;
   display: flex;
   justify-content: flex-start;
   flex-direction: column;
-  height: auto;
+  height: 5.5vh;
   z-index: 1;
-  padding: 10px;
+  padding-left: 5px;
   background: #FFFFFF;
   box-shadow: 0 0 10px 10px rgb(255, 255, 255);
   transition: all 700ms ease;
@@ -261,7 +262,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 8vw;
+  width: 9vw;
   height: 3.5vh;
   border: none;
   cursor: pointer;
@@ -269,7 +270,24 @@ body {
   border-width: 1px;
   border-style: solid;
   border-color: #000000;
-  transition: all 700ms ease;
+}
+
+.resetFiltri:hover{
+  margin-left: 15px;
+  font-family: 'Suisse-Regular';
+  font-size: 13px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 8vw;
+  height: 3.5vh;
+  border: none;
+  cursor: pointer;
+  background: #000000;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #000000;
+  color: #FFFFFF;
 }
 
 .filtri {
@@ -285,61 +303,10 @@ body {
   padding-left: 10px;
   padding-right: 10px;
   background: #FFFFFF;
+  box-shadow: 0 0 10px 10px rgb(255, 255, 255);
   transition: all 700ms ease;
 }
 
-.reset {
-  position: absolute;
-  top: 92.5vh;
-  left: 90vw;
-  z-index: 1;
-  width: 10vw;
-  display: flex;
-  justify-content:flex-start;
-}
-
-
-
-/* .controlli {
-  position: absolute;
-  top: 50px;
-  left: 87vw;
-  z-index: 1;
-  width: 10vw;
-  display: flex;
-  justify-content: space-around;
-} */
-
-.bottoneReset {
- font-family: 'Suisse-Regular';
-  font-size: 14px;
-  width: 8vw;
-  height: 3.5vh;
-  padding-left: 0.5vw;
-  padding-right: 0.5vw;
-  border: none;
-  cursor: pointer;
-  background: #FFFFFF;
-  border-width: 1px;
-  border-style: solid;
-  border-color: #000000;
-}
-
-.bottoneReset:hover {
-  font-family: 'Suisse-Regular';
-  font-size: 14px;
-  width: 8vw;
-  height: 3.5vh;
-  padding-left: 0.5vw;
-  padding-right: 0.5vw;
-  border: none;
-  cursor: pointer;
-  background: #000000;
-  border-width: 1px;
-  border-style: solid;
-  border-color: #000000;
-  color: #FFFFFF;
-}
 
 .filter-by{
   font-family: 'Suisse-Regular';
@@ -541,4 +508,70 @@ img {
 #freccia{
   width: 1vw;
   rotate: -90deg;
+}
+
+
+
+.reset {
+  position: absolute;
+  top: 90vh;
+  left: 75vw;
+  z-index: 1;
+  width: auto;
+  display: flex;
+  padding-left: 5px;
+  padding-right: 5px;
+  justify-content: flex-start;
+  flex-direction: row;
+  align-items: center;
+  height: 5.5vh;
+  z-index: 1;
+  padding: 15px;
+  background: #FFFFFF;
+  box-shadow: 0 0 10px 10px rgb(255, 255, 255);
+  transition: all 700ms ease;
+}
+
+
+
+/* .controlli {
+  position: absolute;
+  top: 50px;
+  left: 87vw;
+  z-index: 1;
+  width: 10vw;
+  display: flex;
+  justify-content: space-around;
+} */
+
+.bottoneReset {
+ font-family: 'Suisse-Regular';
+  font-size: 14px;
+  width: 8vw;
+  height: 3.5vh;
+  margin-left: 15px;
+  padding-left: 0.5vw;
+  padding-right: 0.5vw;
+  border: none;
+  cursor: pointer;
+  background: #FFFFFF;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #000000;
+}
+
+.bottoneReset:hover {
+  font-family: 'Suisse-Regular';
+  font-size: 14px;
+  width: 8vw;
+  height: 3.5vh;
+  padding-left: 0.5vw;
+  padding-right: 0.5vw;
+  border: none;
+  cursor: pointer;
+  background: #000000;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #000000;
+  color: #FFFFFF;
 }

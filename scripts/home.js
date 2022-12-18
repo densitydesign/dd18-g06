@@ -229,7 +229,7 @@ gsap.to("#para5", {
 $(function() {
     $("#txt_1")
         .mouseover(function() {
-          $( '#my_image' ).attr("src","assets/home_imgs/hover1.png");
+          $( '#my_image' ).attr("src","./assets/home_imgs/hover1.png");
           $( '#my_image' ).css("opacity","1");
         })
         .mouseout(function() {
@@ -240,7 +240,7 @@ $(function() {
 $(function() {
     $("#txt_2")
         .mouseover(function() {
-          $( '#my_image' ).attr("src","assets/home_imgs/hover2.png");
+          $( '#my_image' ).attr("src","./assets/home_imgs/hover2.png");
           $( '#my_image' ).css("opacity","1");
         })
         .mouseout(function() {
@@ -251,7 +251,7 @@ $(function() {
 $(function() {
     $("#txt_3")
         .mouseover(function() {
-          $( '#my_image' ).attr("src","assets/home_imgs/hover3.png");
+          $( '#my_image' ).attr("src","./assets/home_imgs/hover3.png");
           $( '#my_image' ).css("opacity","1");
         })
         .mouseout(function() {
@@ -264,7 +264,7 @@ $(function() {
 $(function() {
     $("#catalogue")
         .mouseover(function() {
-          $( '#my_image2' ).attr("src","assets/home_imgs/biases-catalogue.png");
+          $( '#my_image2' ).attr("src","./assets/home_imgs/biases-catalogue.png");
           $( '#my_image2' ).css("opacity","1");
           $( '#my_image2' ).css("animation-name","horizontal");
         })
@@ -276,7 +276,7 @@ $(function() {
 $(function() {
     $("#atlas")
         .mouseover(function() {
-          $( '#my_image2' ).attr("src","assets/home_imgs/prompt-atlas.png");
+          $( '#my_image2' ).attr("src","./assets/home_imgs/prompt-atlas.png");
           $( '#my_image2' ).css("opacity","1");
           $( '#my_image2' ).css("animation-name","scale");
         })

@@ -270,6 +270,12 @@ section {
   box-sizing: border-box;
 }
 
+.team_img {
+	width: 100%;
+	box-sizing: border-box;
+}
+
+
 #fifth {
   margin: 0;
 }

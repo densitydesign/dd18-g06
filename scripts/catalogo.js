@@ -166,7 +166,7 @@ let menuLogo = d3.select("#title");
 // crea il bottone CATALOGUE
 menuSx
   .append("a")
-  .attr("href", "./pages/catalogo.html")
+  .attr("href", "/pages/catalogo.html")
   .append("button")
   .attr("class", "bottoniMenu")
   .attr("id", "catalogue")
@@ -176,7 +176,7 @@ menuSx
 // crea il bottone ATLAS
 menuSx
   .append("a")
-  .attr("href", "./pages/mappa.html")
+  .attr("href", "/pages/mappa.html")
   .append("button")
   .attr("class", "bottoniMenu")
   .attr("id", "atlas")
@@ -187,7 +187,7 @@ menuSx
 // crea il bottone ABOUT
 menuDx
   .append("a")
-  .attr("href", "./pages/about.html")
+  .attr("href", "/pages/about.html")
   .append("button")
   .attr("class", "bottoniMenu")
   .attr("id", "about")

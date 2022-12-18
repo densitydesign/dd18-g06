@@ -949,7 +949,7 @@ let menuLogo = d3.select("#title");
 // crea il bottone CATALOGUE
 menuSx
   .append("a")
-  .attr("href", "/pages/catalogo.html")
+  .attr("href", "./pages/catalogo.html")
   .append("button")
   .attr("class", "bottoniMenu")
   .attr("id", "catalogue")
@@ -959,7 +959,7 @@ menuSx
 // crea il bottone ATLAS
 menuSx
   .append("a")
-  .attr("href", "/pages/mappa.html")
+  .attr("href", "./pages/mappa.html")
   .append("button")
   .attr("class", "bottoniMenu")
   .attr("id", "atlas")
@@ -970,7 +970,7 @@ menuSx
 // crea il bottone ABOUT
 menuDx
   .append("a")
-  .attr("href", "/pages/about.html")
+  .attr("href", "./pages/about.html")
   .append("button")
   .attr("class", "bottoniMenu")
   .attr("id", "about")
@@ -992,7 +992,7 @@ function apri() {
       // casella.style("margin-left", "13vw");
       let freccia = d3.select("#freccia");
       freccia.style("rotate", "90deg");
-      n = true; 
+      n = true;
 
     } else if (n == true) {
       let bias = d3.select("#bias");

@@ -210,6 +210,11 @@ biasContainer
       let casella = d3.select("#casella");
       casella.text("IT'S GIVING *RACISM*");
       casella.style("font-style", "normal")
+      casella.append("img")
+      .attr("src", "/assets/svg/freccia_nera.svg")
+      .attr("id", "freccia")
+      .style("rotate", "-90deg")
+
       // al secono click sul bottone, togli il filtro e mostra tutte le img
     } else if (a == true) {
       d3.selectAll(".card")
@@ -235,6 +240,10 @@ biasContainer
       let casella = d3.select("#casella");
       casella.text("- SELECT THE BIAS -");
       casella.style("font-style", "italic")
+      casella.append("img")
+      .attr("src", "/assets/svg/freccia_nera.svg")
+      .attr("id", "freccia")
+      .style("rotate", "-90deg")
     }
   });
 
@@ -295,7 +304,11 @@ biasContainer
       let casella = d3.select("#casella");
       casella.text("BIG GREEN DREAM TEAM");
       casella.style("font-style", "normal")
-      // al secono click sul bottone, togli il filtro e mostra tutte le img
+      casella.append("img")
+      .attr("src", "/assets/svg/freccia_nera.svg")
+      .attr("id", "freccia")
+      .style("rotate", "-90deg")
+            // al secono click sul bottone, togli il filtro e mostra tutte le img
     } else if (b == true) {
       d3.selectAll(".card")
         .filter(function (d) {
@@ -321,7 +334,11 @@ biasContainer
       let casella = d3.select("#casella");
       casella.text("- SELECT THE BIAS -");
       casella.style("font-style", "italic")
-    }
+      casella.append("img")
+      .attr("src", "/assets/svg/freccia_nera.svg")
+      .attr("id", "freccia")
+      .style("rotate", "-90deg")
+        }
   });
 
 // crea il bottone C
@@ -381,7 +398,11 @@ biasContainer
       let casella = d3.select("#casella");
       casella.text("LANDSCAPE DÉJÀ VU");
       casella.style("font-style", "normal")
-      // al secono click sul bottone, togli il filtro e mostra tutte le img
+      casella.append("img")
+      .attr("src", "/assets/svg/freccia_nera.svg")
+      .attr("id", "freccia")
+      .style("rotate", "-90deg")
+            // al secono click sul bottone, togli il filtro e mostra tutte le img
     } else if (c == true) {
       d3.selectAll(".card")
         .filter(function (d) {
@@ -407,7 +428,11 @@ biasContainer
       let casella = d3.select("#casella");
       casella.text("- SELECT THE BIAS -");
       casella.style("font-style", "italic")
-    }
+      casella.append("img")
+      .attr("src", "/assets/svg/freccia_nera.svg")
+      .attr("id", "freccia")
+      .style("rotate", "-90deg")
+        }
   });
 
 // crea il bottone D
@@ -468,7 +493,11 @@ biasContainer
       let casella = d3.select("#casella");
       casella.text("SOLUTIONS, BUT GREENWASHED");
       casella.style("font-style", "normal")
-      // al secono click sul bottone, togli il filtro e mostra tutte le img
+      casella.append("img")
+      .attr("src", "/assets/svg/freccia_nera.svg")
+      .attr("id", "freccia")
+      .style("rotate", "-90deg")
+            // al secono click sul bottone, togli il filtro e mostra tutte le img
     } else if (d == true) {
       d3.selectAll(".card")
         .filter(function (d) {
@@ -494,7 +523,11 @@ biasContainer
       let casella = d3.select("#casella");
       casella.text("- SELECT THE BIAS -");
       casella.style("font-style", "italic")
-    }
+      casella.append("img")
+      .attr("src", "/assets/svg/freccia_nera.svg")
+      .attr("id", "freccia")
+      .style("rotate", "-90deg")
+        }
   });
 
 // crea il bottone E
@@ -555,7 +588,11 @@ biasContainer
       let casella = d3.select("#casella");
       casella.text("CLIMATE PATCHWORK");
       casella.style("font-style", "normal")
-      // al secono click sul bottone, togli il filtro e mostra tutte le img
+      casella.append("img")
+      .attr("src", "/assets/svg/freccia_nera.svg")
+      .attr("id", "freccia")
+      .style("rotate", "-90deg")
+            // al secono click sul bottone, togli il filtro e mostra tutte le img
     } else if (e == true) {
       d3.selectAll(".card")
         .filter(function (d) {
@@ -581,7 +618,11 @@ biasContainer
       let casella = d3.select("#casella");
       casella.text("- SELECT THE BIAS -");
       casella.style("font-style", "italic")
-    }
+      casella.append("img")
+      .attr("src", "/assets/svg/freccia_nera.svg")
+      .attr("id", "freccia")
+      .style("rotate", "-90deg")
+        }
   });
 
 // crea il bottone F
@@ -641,7 +682,11 @@ biasContainer
       let casella = d3.select("#casella");
       casella.text("SCRIPTS BEFORE PICS");
       casella.style("font-style", "normal")
-      // al secono click sul bottone, togli il filtro e mostra tutte le img
+      casella.append("img")
+      .attr("src", "/assets/svg/freccia_nera.svg")
+      .attr("id", "freccia")
+      .style("rotate", "-90deg")
+            // al secono click sul bottone, togli il filtro e mostra tutte le img
     } else if (f == true) {
       d3.selectAll(".card")
         .filter(function (d) {
@@ -666,7 +711,11 @@ biasContainer
       let casella = d3.select("#casella");
       casella.text("- SELECT THE BIAS -");
       casella.style("font-style", "italic")
-    }
+      casella.append("img")
+      .attr("src", "/assets/svg/freccia_nera.svg")
+      .attr("id", "freccia")
+      .style("rotate", "-90deg")
+        }
   });
 
 // crea il bottone G
@@ -726,7 +775,11 @@ biasContainer
       let casella = d3.select("#casella");
       casella.text("DOWN TO EARTH");
       casella.style("font-style", "normal")
-      // al secono click sul bottone, togli il filtro e mostra tutte le img
+      casella.append("img")
+      .attr("src", "/assets/svg/freccia_nera.svg")
+      .attr("id", "freccia")
+      .style("rotate", "-90deg")
+            // al secono click sul bottone, togli il filtro e mostra tutte le img
     } else if (g == true) {
       d3.selectAll(".card")
         .filter(function (d) {
@@ -751,7 +804,11 @@ biasContainer
       let casella = d3.select("#casella");
       casella.text("- SELECT THE BIAS -");
       casella.style("font-style", "italic")
-    }
+      casella.append("img")
+      .attr("src", "/assets/svg/freccia_nera.svg")
+      .attr("id", "freccia")
+      .style("rotate", "-90deg")
+        }
   });
 
 
@@ -813,6 +870,10 @@ biasContainer
     let casella = d3.select("#casella");
     casella.text("NONSENSE OUT OF HAND");
     casella.style("font-style", "normal")
+    casella.append("img")
+    .attr("src", "/assets/svg/freccia_nera.svg")
+    .attr("id", "freccia")
+    .style("rotate", "-90deg")
     // al secono click sul bottone, togli il filtro e mostra tutte le img
   } else if (h == true) {
     d3.selectAll(".card")
@@ -835,8 +896,13 @@ biasContainer
     let bottoneAll = d3.select("#bottoneBiasAll");
     bottoneAll.style("font-family", "Suisseintl-Bold");
     bottoneAll.style("text-decoration", "underline");
-    let titolo = d3.select("#main-title");
-    titolo.text("Explore all the biases");
+    let casella = d3.select("#casella");
+    casella.text("- SELECT THE BIAS -");
+    casella.style("font-style", "italic")
+    casella.append("img")
+    .attr("src", "/assets/svg/freccia_nera.svg")
+    .attr("id", "freccia")
+    .style("rotate", "-90deg")
   }
 });
 
@@ -913,6 +979,8 @@ function apri() {
       menuTendina.style("top", "62vh");
       let casella = d3.select("#casella");
       casella.style("margin-left", "13vw");
+      let freccia = d3.select("#freccia");
+      freccia.style("rotate", "-90deg");
       n = true; 
 
     } else if (n == true) {
@@ -924,6 +992,8 @@ function apri() {
       menuTendina.style("top", "90vh");
       let casella = d3.select("#casella");
       casella.style("margin-left", "15px");
+      let freccia = d3.select("#freccia");
+      freccia.style("rotate", "0deg");
       n = false;
     }
   }

@@ -86,6 +86,17 @@ gsap.to(".subtitle", {
   opacity: 0,
 });
 
+gsap.to(".freccia_cover", {
+  scrollTrigger: {
+    trigger: ".subtitle",
+    start: 0,
+    end: window.innerHeight*0.3,
+    scrub: true,
+    toggleActions: "play none none none"
+  },
+  opacity: 0,
+});
+
 gsap.to("#menu", {
   scrollTrigger: {
     trigger: "#menu",

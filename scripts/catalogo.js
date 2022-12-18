@@ -109,7 +109,7 @@ for (let i = 0; i < boxArray.length; i++) {
       .text(function (d) {
         let p = d.prompt;
         let pDef = p.replaceAll('-', ' ');
-        return 'prompt: ' + pDef;
+        return 'Prompt: ' + pDef;
       });
   });
 }
@@ -157,7 +157,7 @@ for (let i = 0; i < boxArray2.length; i++) {
       .text(function (d) {
         let p = d.prompt;
         let pDef = p.replaceAll('-', ' ');
-        return 'prompt: ' + pDef;
+        return 'Prompt: ' + pDef;
       });
   });
 }

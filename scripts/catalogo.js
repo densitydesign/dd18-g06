@@ -103,9 +103,11 @@ for (let i = 0; i < boxArray.length; i++) {
     // PROMPT
     card
       .append("div")
-      .attr("class", "card-prompt")
+      .attr("id", "card-prompt")
       .text(function (d) {
-        return "prompt: " + d.prompt;
+        let p = d.prompt;
+        let pDef = p.replaceAll('-', ' ');
+        return '" ' + pDef + '"';
       });
   });
 }
@@ -149,9 +151,11 @@ for (let i = 0; i < boxArray2.length; i++) {
     // PROMPT
     card
       .append("div")
-      .attr("class", "card-prompt")
+      .attr("id", "card-prompt")
       .text(function (d) {
-        return "prompt: " + d.prompt;
+        let p = d.prompt;
+        let pDef = p.replaceAll('-', ' ');
+        return '" ' + pDef + '"';
       });
   });
 }
@@ -227,6 +231,7 @@ zoomContainer
       box.style("height", function () {
         return hdef;
       });
+      
     } else {
       let ZoomPiu = d3.select("#ZoomPiu");
       ZoomPiu.style("opacity", "0.3");
@@ -237,6 +242,9 @@ zoomContainer
       box.style("height", function () {
         return hdef;
       });
+      // if (altezza > 350){
+      //   let prompt = d3.select("#card-prompt")
+      // prompt.style("display", "flex")}
     }
   });
 

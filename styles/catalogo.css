@@ -473,10 +473,16 @@ img {
   height: 100%;
 }
 
-.card-prompt {
+#card-prompt {
+  font-family: 'Exposure-italic';
+  font-variation-settings: "EXPO" 0;
   font-size: 10pt;
+  margin-top: -10%;
+  width: 100%;
+  height: 10%;
+  background-color: #f8f8f8;
+  box-shadow: 0 0 15px 15px #f8f8f8;
   display: none;
-  transition: opacity 500ms;
 }
 
 #BoxTesto {

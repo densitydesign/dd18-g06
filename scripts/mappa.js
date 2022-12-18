@@ -988,6 +988,7 @@ function apri() {
       biasSub.style("display", "flex");
       let menuTendina = d3.select("#menuTendina");
       menuTendina.style("top", "62vh");
+      menuTendina.style("height", "auto");
       // let casella = d3.select("#casella");
       // casella.style("margin-left", "13vw");
       let freccia = d3.select("#freccia");
@@ -1001,6 +1002,7 @@ function apri() {
       biasSub.style("display", "none");
       let menuTendina = d3.select("#menuTendina");
       menuTendina.style("top", "90vh");
+      menuTendina.style("height", "5.5vh");
       // let casella = d3.select("#casella");
       // casella.style("margin-left", "15px");
       let freccia = d3.select("#freccia");

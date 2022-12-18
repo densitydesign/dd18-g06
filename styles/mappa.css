@@ -211,6 +211,7 @@ body {
   flex-direction: row;
   justify-content: center;
   justify-content: flex-start;
+  align-items: center;
   padding: 10px;
   transition: all 700ms ease;
 }
@@ -303,7 +304,6 @@ body {
   padding-left: 10px;
   padding-right: 10px;
   background: #FFFFFF;
-  box-shadow: 0 0 10px 10px rgb(255, 255, 255);
   transition: all 700ms ease;
 }
 

@@ -2,7 +2,9 @@
 data = d3.csv("/assets/dataset/data_mappa.csv");
 data2 = d3.csv("/assets/dataset/data_catalogo.csv");
 let percorsoImmagini = "/assets/catalogo_imgs/normale/";
-let altezza = 250;
+let altezza = 300;
+
+
 
 //array contenitori png
 let boxArray = [
@@ -103,11 +105,11 @@ for (let i = 0; i < boxArray.length; i++) {
     // PROMPT
     card
       .append("div")
-      .attr("id", "card-prompt")
+      .attr("id", "cardPrompt")
       .text(function (d) {
         let p = d.prompt;
         let pDef = p.replaceAll('-', ' ');
-        return '" ' + pDef + '"';
+        return 'prompt: ' + pDef;
       });
   });
 }
@@ -151,11 +153,11 @@ for (let i = 0; i < boxArray2.length; i++) {
     // PROMPT
     card
       .append("div")
-      .attr("id", "card-prompt")
+      .attr("id", "cardPrompt")
       .text(function (d) {
         let p = d.prompt;
         let pDef = p.replaceAll('-', ' ');
-        return '" ' + pDef + '"';
+        return 'prompt: ' + pDef;
       });
   });
 }
@@ -228,6 +230,10 @@ zoomContainer
       altezza = h;
       let hdef = h + "px";
       let box = d3.selectAll(".box-img");
+      if (altezza > 400){
+        let cardPrompt = d3.selectAll("#cardPrompt")
+        cardPrompt.style("display", "flex")
+      }
       box.style("height", function () {
         return hdef;
       });
@@ -242,9 +248,6 @@ zoomContainer
       box.style("height", function () {
         return hdef;
       });
-      // if (altezza > 350){
-      //   let prompt = d3.select("#card-prompt")
-      // prompt.style("display", "flex")}
     }
   });
 
@@ -266,6 +269,10 @@ zoomContainer
       altezza = h;
       let hdef = h + "px";
       let box = d3.selectAll(".box-img");
+      if (altezza <= 400){
+        let cardPrompt = d3.selectAll("#cardPrompt")
+        cardPrompt.style("display", "none")
+      }
       box.style("height", function () {
         return hdef;
       });
@@ -296,9 +303,13 @@ zoomContainer
     let ZoomMeno = d3.select("#ZoomMeno");
     ZoomMeno.style("opacity", "1");
     ZoomMeno.style("cursor", "pointer");
-    altezza = 250;
+    altezza = 300;
     let box = d3.selectAll(".box-img");
-    box.style("height", "250px");
+    box.style("height", "300px");
+    if (altezza < 400){
+      let cardPrompt = d3.selectAll("#cardPrompt")
+      cardPrompt.style("display", "none")
+    }
   });
 
 // // PROMPT CHE SEGUE LA FRECCINA
@@ -607,7 +618,7 @@ function ap(x) {
 
 function animazione() {
   let box = d3.selectAll(".box-img");
-  box.style("height", "250px");
+  box.style("height", "300px");
 }
 
 /// fai selezionare solo una sezione per volta
@@ -692,6 +703,10 @@ function closeAll() {
   let ZoomPiu = d3.select("#ZoomPiu");
   ZoomPiu.style("opacity", "1");
   ZoomPiu.style("cursor", "pointer");
+  altezza = 300;
+    let cardPrompt = d3.selectAll("#cardPrompt")
+    cardPrompt.style("display", "none")
+
 }
 
 function booleane() {

@@ -98,7 +98,7 @@ gsap.to("#menu", {
 
 
 const duration = 0.5;
-const start = "top center";
+const start = "top 60%";
 const ease = "power1.inOut"
 
 //------------------------------- trigger 1 -------------------------//

@@ -243,15 +243,20 @@ section {
   position: relative;
   width: 100%;
   display: flex;
-  gap:16px;
+  gap: 16px;
+	margin: 36px 0;
 }
 
 .graph-2 {
-  width: 50%;
+  width: 100%;
   box-sizing: border-box;
   object-fit: cover;
   overflow: hidden;
-  margin: 36px 0;
+}
+
+.didascalia {
+	font-family: "Suisse-Regular" !important;
+	font-size: 12px !important;
 }
 
 .team_container {

@@ -102,57 +102,68 @@ for (let i = 0; i < promptArray.length; i++) {
 
 //FILTRI DEI BIAS
 let biasContainer = d3.select("#bias");
+let reset = d3.select("#resetFiltri");
 
 // crea il bottone all
-// biasContainer
-//   .append("button")
-//   .attr("class", "bottoniBias")
-//   .attr("id", "bottoneBiasAll")
-//   .text("ALL")
-//   .style("background", "rgba(0, 0, 0, 0.7)")
-//   .style("color", "white")
-//   .on("click", function () {
-//     d3.selectAll(".card").style("opacity", "1");
-//     a = false;
-//     b = false;
-//     c = false;
-//     d = false;
-//     e = false;
-//     f = false;
-//     g = false;
-//     h = false;
-//     // diversifica visivamente il bottone attivo e cambia titolo
-//     let bottoneAll = d3.select("#bottoneBiasAll");
-//     bottoneAll.style("font-family", "Suisseintl-Bold");
-//     bottoneAll.style("text-decoration", "underline");
-//     let titolo = d3.select("#main-title");
-//     titolo.text("Explore all the biases");
-//     // resetta tutti gli altri
-//     let bottoneA = d3.select("#bottoneBiasA");
-//     bottoneA.style("font-family", "Suisse-Regular");
-//     bottoneA.style("text-decoration", "none");
-//     let bottoneB = d3.select("#bottoneBiasB");
-//     bottoneB.style("font-family", "Suisse-Regular");
-//     bottoneB.style("text-decoration", "none");
-//     let bottoneC = d3.select("#bottoneBiasC");
-//     bottoneC.style("font-family", "Suisse-Regular");
-//     bottoneC.style("text-decoration", "none");
-//     let bottoneD = d3.select("#bottoneBiasD");
-//     bottoneD.style("font-family", "Suisse-Regular");
-//     bottoneD.style("text-decoration", "none");
-//     let bottoneE = d3.select("#bottoneBiasE");
-//     bottoneE.style("font-family", "Suisse-Regular");
-//     bottoneE.style("text-decoration", "none");
-//     let bottoneF = d3.select("#bottoneBiasF");
-//     bottoneF.style("font-family", "Suisse-Regular");
-//     bottoneF.style("text-decoration", "none");
-//     let bottoneG = d3.select("#bottoneBiasG");
-//     bottoneG.style("font-family", "Suisse-Regular");
-//     bottoneG.style("text-decoration", "none");
-//     let bottoneH = d3.select("#bottoneBiasH");
-//     bottoneH.style("font-family", "Suisse-Regular");
-//     bottoneH.style("text-decoration", "none");
-//   });
+reset
+  .on("click", function () {
+    d3.selectAll(".card").style("opacity", "1");
+    a = false;
+    b = false;
+    c = false;
+    d = false;
+    e = false;
+    f = false;
+    g = false;
+    h = false;
+    // diversifica visivamente il bottone attivo e cambia titolo
+    let titolo = d3.select("#main-title");
+    titolo.text("Explore all the biases");
+    let casella = d3.select("#casella");
+    casella.text("- SELECT THE BIAS -");
+    casella.style("font-style", "italic")
+    casella.append("img")
+    .attr("src", "/assets/svg/freccia_nera.svg")
+    .attr("id", "freccia")
+    .style("rotate", "-90deg")
+    // resetta tutti gli altri
+    let bottoneA = d3.select("#bottoneBiasA");
+    bottoneA.style("font-family", "Suisse-Regular");
+    bottoneA.style("text-decoration", "none");
+    let bottoneB = d3.select("#bottoneBiasB");
+    bottoneB.style("font-family", "Suisse-Regular");
+    bottoneB.style("text-decoration", "none");
+    let bottoneC = d3.select("#bottoneBiasC");
+    bottoneC.style("font-family", "Suisse-Regular");
+    bottoneC.style("text-decoration", "none");
+    let bottoneD = d3.select("#bottoneBiasD");
+    bottoneD.style("font-family", "Suisse-Regular");
+    bottoneD.style("text-decoration", "none");
+    let bottoneE = d3.select("#bottoneBiasE");
+    bottoneE.style("font-family", "Suisse-Regular");
+    bottoneE.style("text-decoration", "none");
+    let bottoneF = d3.select("#bottoneBiasF");
+    bottoneF.style("font-family", "Suisse-Regular");
+    bottoneF.style("text-decoration", "none");
+    let bottoneG = d3.select("#bottoneBiasG");
+    bottoneG.style("font-family", "Suisse-Regular");
+    bottoneG.style("text-decoration", "none");
+    let bottoneH = d3.select("#bottoneBiasH");
+    bottoneH.style("font-family", "Suisse-Regular");
+    bottoneH.style("text-decoration", "none");
+    // chiudi filtro
+    let bias = d3.select("#bias");
+    bias.style("display", "none");
+    let biasSub = d3.select("#biasSub");
+    biasSub.style("display", "none");
+    let menuTendina = d3.select("#menuTendina");
+    menuTendina.style("top", "90vh");
+    // let casella = d3.select("#casella");
+    // casella.style("margin-left", "15px");
+    let freccia = d3.select("#freccia");
+    freccia.style("rotate", "-90deg");
+    n = false;
+  });
 
 // crea il bottone A
 biasContainer
@@ -440,7 +451,7 @@ biasContainer
   .append("button")
   .attr("class", "bottoniBias")
   .attr("id", "bottoneBiasD")
-  .text("SOLUTIONS, BUT GREENWASHED")
+  .text("GREENWASHED SOLUTIONS")
   // al click, resetta e mostra solo le immagini D
   .on("click", function () {
     if (d == false) {
@@ -491,7 +502,7 @@ biasContainer
       bottoneAll.style("font-family", "Suisse-Regular");
       bottoneAll.style("text-decoration", "none");
       let casella = d3.select("#casella");
-      casella.text("SOLUTIONS, BUT GREENWASHED");
+      casella.text("GREENWASHED SOLUTIONS");
       casella.style("font-style", "normal")
       casella.append("img")
       .attr("src", "/assets/svg/freccia_nera.svg")
@@ -977,8 +988,8 @@ function apri() {
       biasSub.style("display", "flex");
       let menuTendina = d3.select("#menuTendina");
       menuTendina.style("top", "62vh");
-      let casella = d3.select("#casella");
-      casella.style("margin-left", "13vw");
+      // let casella = d3.select("#casella");
+      // casella.style("margin-left", "13vw");
       let freccia = d3.select("#freccia");
       freccia.style("rotate", "90deg");
       n = true; 
@@ -990,8 +1001,8 @@ function apri() {
       biasSub.style("display", "none");
       let menuTendina = d3.select("#menuTendina");
       menuTendina.style("top", "90vh");
-      let casella = d3.select("#casella");
-      casella.style("margin-left", "15px");
+      // let casella = d3.select("#casella");
+      // casella.style("margin-left", "15px");
       let freccia = d3.select("#freccia");
       freccia.style("rotate", "-90deg");
       n = false;

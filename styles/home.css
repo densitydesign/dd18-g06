@@ -623,7 +623,7 @@ div.layer2:nth-child(16){
 }
 
 .catalogue {
-	background-image: url("./assets/home_imgs/biases-catalogue.png");
+	background-image: url("../assets/home_imgs/biases-catalogue.png");
 	background-repeat: no-repeat;
   background-size: cover;
 	background-position: center;
@@ -635,7 +635,7 @@ div.layer2:nth-child(16){
 }
 
 .atlas {
-	background-image: url("./assets/home_imgs/prompt-atlas.png");
+	background-image: url("../assets/home_imgs/prompt-atlas.png");
 	background-repeat: no-repeat;
   background-size: cover;
 	background-position: center;

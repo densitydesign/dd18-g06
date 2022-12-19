@@ -1,5 +1,5 @@
 // Interpret the data as the correct format. Use d3.csv or d3.tsv accordingly.
-data = d3.csv("/assets/dataset/data_mappa.csv");
+data = d3.csv("../assets/dataset/data_mappa.csv");
 
 //percorso immagini
 let percorsoImmagini = "/assets/mappa_imgs/normale/";
@@ -123,7 +123,7 @@ reset
     casella.text("- SELECT THE BIAS -");
     casella.style("font-style", "italic")
     casella.append("img")
-    .attr("src", "/assets/svg/freccia_nera.svg")
+    .attr("src", "../assets/svg/freccia_nera.svg")
     .attr("id", "freccia")
     .style("rotate", "-90deg")
     // resetta tutti gli altri
@@ -222,7 +222,7 @@ biasContainer
       casella.text("IT'S GIVING *RACISM*");
       casella.style("font-style", "normal")
       casella.append("img")
-      .attr("src", "/assets/svg/freccia_nera.svg")
+      .attr("src", "../assets/svg/freccia_nera.svg")
       .attr("id", "freccia")
       .style("rotate", "90deg")
 
@@ -252,7 +252,7 @@ biasContainer
       casella.text("- SELECT THE BIAS -");
       casella.style("font-style", "italic")
       casella.append("img")
-      .attr("src", "/assets/svg/freccia_nera.svg")
+      .attr("src", "..../assets/svg/freccia_nera.svg")
       .attr("id", "freccia")
       .style("rotate", "90deg")
     }
@@ -316,7 +316,7 @@ biasContainer
       casella.text("BIG GREEN DREAM TEAM");
       casella.style("font-style", "normal")
       casella.append("img")
-      .attr("src", "/assets/svg/freccia_nera.svg")
+      .attr("src", "../assets/svg/freccia_nera.svg")
       .attr("id", "freccia")
       .style("rotate", "90deg")
             // al secono click sul bottone, togli il filtro e mostra tutte le img
@@ -346,7 +346,7 @@ biasContainer
       casella.text("- SELECT THE BIAS -");
       casella.style("font-style", "italic")
       casella.append("img")
-      .attr("src", "/assets/svg/freccia_nera.svg")
+      .attr("src", "../assets/svg/freccia_nera.svg")
       .attr("id", "freccia")
       .style("rotate", "90deg")
         }
@@ -410,7 +410,7 @@ biasContainer
       casella.text("LANDSCAPE DÉJÀ VU");
       casella.style("font-style", "normal")
       casella.append("img")
-      .attr("src", "/assets/svg/freccia_nera.svg")
+      .attr("src", "../assets/svg/freccia_nera.svg")
       .attr("id", "freccia")
       .style("rotate", "90deg")
             // al secono click sul bottone, togli il filtro e mostra tutte le img
@@ -440,7 +440,7 @@ biasContainer
       casella.text("- SELECT THE BIAS -");
       casella.style("font-style", "italic")
       casella.append("img")
-      .attr("src", "/assets/svg/freccia_nera.svg")
+      .attr("src", "../assets/svg/freccia_nera.svg")
       .attr("id", "freccia")
       .style("rotate", "90deg")
         }
@@ -505,7 +505,7 @@ biasContainer
       casella.text("GREENWASHED SOLUTIONS");
       casella.style("font-style", "normal")
       casella.append("img")
-      .attr("src", "/assets/svg/freccia_nera.svg")
+      .attr("src", "../assets/svg/freccia_nera.svg")
       .attr("id", "freccia")
       .style("rotate", "90deg")
             // al secono click sul bottone, togli il filtro e mostra tutte le img
@@ -535,7 +535,7 @@ biasContainer
       casella.text("- SELECT THE BIAS -");
       casella.style("font-style", "italic")
       casella.append("img")
-      .attr("src", "/assets/svg/freccia_nera.svg")
+      .attr("src", "../assets/svg/freccia_nera.svg")
       .attr("id", "freccia")
       .style("rotate", "90deg")
         }
@@ -600,7 +600,7 @@ biasContainer
       casella.text("CLIMATE PATCHWORK");
       casella.style("font-style", "normal")
       casella.append("img")
-      .attr("src", "/assets/svg/freccia_nera.svg")
+      .attr("src", "../assets/svg/freccia_nera.svg")
       .attr("id", "freccia")
       .style("rotate", "90deg")
             // al secono click sul bottone, togli il filtro e mostra tutte le img
@@ -630,7 +630,7 @@ biasContainer
       casella.text("- SELECT THE BIAS -");
       casella.style("font-style", "italic")
       casella.append("img")
-      .attr("src", "/assets/svg/freccia_nera.svg")
+      .attr("src", "../assets/svg/freccia_nera.svg")
       .attr("id", "freccia")
       .style("rotate", "90deg")
         }
@@ -694,7 +694,7 @@ biasContainer
       casella.text("SCRIPTS BEFORE PICS");
       casella.style("font-style", "normal")
       casella.append("img")
-      .attr("src", "/assets/svg/freccia_nera.svg")
+      .attr("src", "../assets/svg/freccia_nera.svg")
       .attr("id", "freccia")
       .style("rotate", "90deg")
             // al secono click sul bottone, togli il filtro e mostra tutte le img
@@ -723,7 +723,7 @@ biasContainer
       casella.text("- SELECT THE BIAS -");
       casella.style("font-style", "italic")
       casella.append("img")
-      .attr("src", "/assets/svg/freccia_nera.svg")
+      .attr("src", "../assets/svg/freccia_nera.svg")
       .attr("id", "freccia")
       .style("rotate", "90deg")
         }
@@ -787,7 +787,7 @@ biasContainer
       casella.text("DOWN TO EARTH");
       casella.style("font-style", "normal")
       casella.append("img")
-      .attr("src", "/assets/svg/freccia_nera.svg")
+      .attr("src", "../assets/svg/freccia_nera.svg")
       .attr("id", "freccia")
       .style("rotate", "90deg")
             // al secono click sul bottone, togli il filtro e mostra tutte le img
@@ -816,7 +816,7 @@ biasContainer
       casella.text("- SELECT THE BIAS -");
       casella.style("font-style", "italic")
       casella.append("img")
-      .attr("src", "/assets/svg/freccia_nera.svg")
+      .attr("src", "../assets/svg/freccia_nera.svg")
       .attr("id", "freccia")
       .style("rotate", "90deg")
         }
@@ -882,7 +882,7 @@ biasContainer
     casella.text("NONSENSE OUT OF HAND");
     casella.style("font-style", "normal")
     casella.append("img")
-    .attr("src", "/assets/svg/freccia_nera.svg")
+    .attr("src", "../assets/svg/freccia_nera.svg")
     .attr("id", "freccia")
     .style("rotate", "90deg")
     // al secono click sul bottone, togli il filtro e mostra tutte le img
@@ -911,7 +911,7 @@ biasContainer
     casella.text("- SELECT THE BIAS -");
     casella.style("font-style", "italic")
     casella.append("img")
-    .attr("src", "/assets/svg/freccia_nera.svg")
+    .attr("src", "../assets/svg/freccia_nera.svg")
     .attr("id", "freccia")
     .style("rotate", "90deg")
   }

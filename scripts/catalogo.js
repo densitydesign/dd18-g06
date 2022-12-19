@@ -1,7 +1,7 @@
 // Interpret the data as the correct format. Use d3.csv or d3.tsv accordingly.
-data = d3.csv("/assets/dataset/data_mappa.csv");
-data2 = d3.csv("/assets/dataset/data_catalogo.csv");
-let percorsoImmagini = "/assets/catalogo_imgs/normale/";
+data = d3.csv("../assets/dataset/data_mappa.csv");
+data2 = d3.csv("../assets/dataset/data_catalogo.csv");
+let percorsoImmagini = "../assets/catalogo_imgs/normale/";
 let altezza = 300;
 
 
@@ -172,7 +172,7 @@ let menuLogo = d3.select("#title");
 // crea il bottone CATALOGUE
 menuSx
   .append("a")
-  .attr("href", "/pages/catalogo.html")
+  .attr("href", "../pages/catalogo.html")
   .append("button")
   .attr("class", "bottoniMenu")
   .attr("id", "catalogue")
@@ -182,7 +182,7 @@ menuSx
 // crea il bottone ATLAS
 menuSx
   .append("a")
-  .attr("href", "/pages/mappa.html")
+  .attr("href", "../pages/mappa.html")
   .append("button")
   .attr("class", "bottoniMenu")
   .attr("id", "atlas")
@@ -193,7 +193,7 @@ menuSx
 // crea il bottone ABOUT
 menuDx
   .append("a")
-  .attr("href", "/pages/about.html")
+  .attr("href", "../pages/about.html")
   .append("button")
   .attr("class", "bottoniMenu")
   .attr("id", "about")
@@ -596,7 +596,7 @@ function ap(x) {
       let cont1 = document.getElementById("boxCat19");
       cont1.style.display = "flex";
       setTimeout(animazione, 300);
-      window.scrollTo(100, 0);
+      // window.scrollTo(0, 0);
 
       i = true;
     } else if (i == true) {

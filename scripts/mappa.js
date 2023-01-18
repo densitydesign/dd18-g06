@@ -258,6 +258,10 @@ biasContainer
     }
   });
 
+  biasContainer
+  .append("div")
+  .attr("class", "riga")
+
 // crea il bottone B
 biasContainer
   .append("button")
@@ -352,6 +356,8 @@ biasContainer
         }
   });
 
+
+
 // crea il bottone C
 biasContainer
   .append("button")
@@ -445,6 +451,8 @@ biasContainer
       .style("rotate", "90deg")
         }
   });
+
+
 
 // crea il bottone D
 biasContainer
@@ -541,6 +549,8 @@ biasContainer
         }
   });
 
+
+
 // crea il bottone E
 biasContainer
   .append("button")
@@ -636,6 +646,8 @@ biasContainer
         }
   });
 
+
+
 // crea il bottone F
 biasContainer
   .append("button")
@@ -729,6 +741,8 @@ biasContainer
         }
   });
 
+
+
 // crea il bottone G
 biasContainer
   .append("button")
@@ -821,6 +835,8 @@ biasContainer
       .style("rotate", "90deg")
         }
   });
+
+
 
 
   // crea il bottone H
@@ -966,6 +982,7 @@ menuSx
   .text("PROMPT EXPLORER");
 // .on("click", function () {
 // });
+
 
 // crea il bottone ABOUT
 menuDx

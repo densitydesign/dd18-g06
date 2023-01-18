@@ -2,14 +2,14 @@
 data = d3.csv("../assets/dataset/data_mappa.csv");
 data2 = d3.csv("../assets/dataset/data_catalogo.csv");
 let percorsoImmagini = "../assets/catalogo_imgs/normale/";
-let altezza = 300;
+let altezza = 450;
 
 
 
 //array contenitori png
 let boxArray = [
-  // "hero",
-  // "help",
+  "hero",
+  "help",
   "Protesting",
   "Standing",
   "Doing-stuff",
@@ -29,12 +29,17 @@ let boxArray = [
   "Nosense",
 ];
 //array contenitori gif
-let boxArray2 = ["hero", "help", "mix", "pairs"];
+let boxArray2 = [
+  // "hero", 
+  // "help", 
+  "mix", 
+  "pairs"
+];
 
 //percorso sottocategorie png
 let catArray = [
-  // "A_Heroes",
-  // "A_Victims",
+  "A_Heroes",
+  "A_Victims",
   "B_Protesting",
   "B_Standing",
   "B_Doing-things",
@@ -54,7 +59,11 @@ let catArray = [
   "H",
 ];
 //percorso sottocategorie gif
-let catArray2 = ["A_Heroes", "A_Victims", "E_Collage", "E_Bizarre"];
+let catArray2 = [
+  // "A_Heroes", 
+  // "A_Victims", 
+  "E_Collage", 
+  "E_Bizarre"];
 
 let a = false;
 let b = false;
@@ -219,7 +228,7 @@ zoomContainer
   .attr("id", "ZoomPiu")
   .text("+")
   .on("click", function () {
-    if (altezza < 500) {
+    if (altezza < 550) {
       let ZoomMeno = d3.select("#ZoomMeno");
       ZoomMeno.style("opacity", "1");
       ZoomMeno.style("cursor", "pointer");
@@ -258,7 +267,7 @@ zoomContainer
   .attr("id", "ZoomMeno")
   .text("-")
   .on("click", function () {
-    if (altezza > 50) {
+    if (altezza > 150) {
       let ZoomPiu = d3.select("#ZoomPiu");
       ZoomPiu.style("opacity", "1");
       ZoomPiu.style("cursor", "pointer");
@@ -303,13 +312,12 @@ zoomContainer
     let ZoomMeno = d3.select("#ZoomMeno");
     ZoomMeno.style("opacity", "1");
     ZoomMeno.style("cursor", "pointer");
-    altezza = 300;
+    altezza = 450;
     let box = d3.selectAll(".box-img");
-    box.style("height", "300px");
-    if (altezza < 400){
-      let cardPrompt = d3.selectAll("#cardPrompt")
-      cardPrompt.style("display", "none")
-    }
+    box.style("height", "450px");
+    let cardPrompt = d3.selectAll("#cardPrompt")
+    cardPrompt.style("display", "flex")
+    
   });
 
 // // PROMPT CHE SEGUE LA FRECCINA
@@ -567,7 +575,7 @@ function ap(x) {
       let cont1 = document.getElementById("boxCat18");
       cont1.style.display = "flex";
       setTimeout(animazione, 300);
-      window.scrollTo(100, 0);
+      // window.scrollTo(100, 0);
 
       g = true;
     } else if (g == true) {
@@ -618,7 +626,7 @@ function ap(x) {
 
 function animazione() {
   let box = d3.selectAll(".box-img");
-  box.style("height", "300px");
+  box.style("height", "450px");
 }
 
 /// fai selezionare solo una sezione per volta
@@ -703,9 +711,9 @@ function closeAll() {
   let ZoomPiu = d3.select("#ZoomPiu");
   ZoomPiu.style("opacity", "1");
   ZoomPiu.style("cursor", "pointer");
-  altezza = 300;
+  altezza = 450;
     let cardPrompt = d3.selectAll("#cardPrompt")
-    cardPrompt.style("display", "none")
+    cardPrompt.style("display", "flex")
 
 }
 

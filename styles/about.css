@@ -141,7 +141,7 @@ a {
 .bottoniMenu {
   font-family: 'Suisse-Regular';
   /* font-weight: 400; */
-  font-size: 12px;
+  font-size: 11px;
   width: auto;
   height: auto;
   background: #f8f8f8;
@@ -154,7 +154,7 @@ a {
 .bottoniMenu:hover {
   font-family: 'Suisse-Regular';
   /* font-weight: 400; */
-  font-size: 12px;
+  font-size: 11px;
   text-decoration: underline;
   width: auto;
   height: auto;
@@ -196,7 +196,7 @@ section {
 
 
 .section_title {
-  font-size: 36px;
+  font-size: 32px;
   font-family: 'Exposure-Italic';
   font-variation-settings: "EXPO" -40;
   width: 20%;
@@ -220,12 +220,12 @@ section {
 .para p {
   font-family: 'Exposure';
   font-variation-settings: "EXPO" -10;
-  font-size: 16px;
+  font-size: 14.5px;
 }
 
 .freccia {
-  width: 30px;
-	height: 30px;
+  width: 25px;
+	height: 25px;
 }
 
 .bold {

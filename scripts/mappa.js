@@ -2,7 +2,7 @@
 data = d3.csv("../assets/dataset/data_mappa.csv");
 
 //percorso immagini
-let percorsoImmagini = "/assets/mappa_imgs/normale/";
+let percorsoImmagini = "../assets/mappa_imgs/normale/";
 let promptArray = [
   "climate-change",
   "climate-crisis",
@@ -252,7 +252,7 @@ biasContainer
       casella.text("- SELECT THE BIAS -");
       casella.style("font-style", "italic")
       casella.append("img")
-      .attr("src", "..../assets/svg/freccia_nera.svg")
+      .attr("src", "../assets/svg/freccia_nera.svg")
       .attr("id", "freccia")
       .style("rotate", "90deg")
     }
@@ -965,7 +965,7 @@ let menuLogo = d3.select("#title");
 // crea il bottone CATALOGUE
 menuSx
   .append("a")
-  .attr("href", "/pages/catalogo.html")
+  .attr("href", "../pages/catalogo.html")
   .append("button")
   .attr("class", "bottoniMenu")
   .attr("id", "catalogue")
@@ -975,7 +975,7 @@ menuSx
 // crea il bottone ATLAS
 menuSx
   .append("a")
-  .attr("href", "/pages/mappa.html")
+  .attr("href", "../pages/mappa.html")
   .append("button")
   .attr("class", "bottoniMenu")
   .attr("id", "atlas")
@@ -987,7 +987,7 @@ menuSx
 // crea il bottone ABOUT
 menuDx
   .append("a")
-  .attr("href", "/pages/about.html")
+  .attr("href", "../pages/about.html")
   .append("button")
   .attr("class", "bottoniMenu")
   .attr("id", "about")

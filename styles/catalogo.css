@@ -152,7 +152,7 @@ body {
 .bottoniMenu {
   font-family: 'Suisse-Regular';
   /* font-weight: 400; */
-  font-size: 12px;
+  font-size: 11px;
   width: auto;
   height: auto;
   background: #f8f8f8;
@@ -165,7 +165,7 @@ body {
 .bottoniMenu:hover {
   font-family: 'Suisse-Regular';
   /* font-weight: 400; */
-  font-size: 12px;
+  font-size: 11px;
   text-decoration: underline;
   width: auto;
   height: auto;
@@ -186,7 +186,7 @@ body {
   position: fixed;
   top: 90vh;
   left: 83.5vw;
-  width: 12vw;
+  width: auto;
   height: 5.5vh;
   z-index: 1;
   display: flex;
@@ -234,7 +234,7 @@ body {
 #ZoomReset {
   font-family: 'Suisse-Regular';
   font-size: 12px;
-  width: 8vh;
+  width: 10vh;
   height: 3.5vh;
   /* backdrop-filter: blur(5px); */
   /* border-radius: 50px; */
@@ -250,7 +250,7 @@ body {
 #ZoomReset:hover {
   font-family: 'Suisse-Regular';
   font-size: 12px;
-  width: 8vh;
+  width: 10vh;
   height: 3.5vh;
   /* backdrop-filter: blur(5px); */
   /* border-radius: 50px; */
@@ -302,7 +302,7 @@ body {
   /* background-color: rgb(143, 246, 217); */
   font-family: 'Exposure-italic';
   font-variation-settings: "EXPO" 0;
-  font-size: 22pt;
+  font-size: 20pt;
   height: 11vh;
   padding-top: 3.5vh;
   width: 26vw;
@@ -313,7 +313,7 @@ body {
   /* background-color: rgb(143, 246, 217); */
   font-family: 'Exposure-italic';
   font-variation-settings: "EXPO" -60;
-  font-size: 22pt;
+  font-size: 20pt;
   height: 11vh;
   padding-top: 3.5vh;
   width: 26vw;
@@ -324,7 +324,7 @@ body {
   /* background-color: rgb(143, 246, 217); */
   font-family: 'Exposure-italic';
   font-variation-settings: "EXPO" -60;
-  font-size: 22pt;
+  font-size: 20pt;
   height: 11vh;
   padding-top: 3.5vh;
   width: 26vw;
@@ -339,7 +339,7 @@ body {
 
 .titoli-small {
   /* background-color: rgb(143, 246, 217); */
-  font-size: 10pt;
+  font-size: 9pt;
   font-family: 'Suisse-Regular';
   width: auto;
   display: none;
@@ -397,7 +397,7 @@ body {
 .titoli-categorie {
   font-family: 'Exposure-italic';
   font-variation-settings: "EXPO" -20;
-  font-size: 12pt;
+  font-size: 11pt;
   padding-bottom: 5px;
   width: 11vw;
   transition: font-variation-settings .45s;
@@ -412,14 +412,14 @@ body {
   /* font-family: 'Exposure';
   font-variation-settings: "EXPO" 100; */
   font-family: 'Suisse-Regular';
-  font-size: 12pt;
+  font-size: 10pt;
   padding-bottom: 5px;
   width: 3.5vw;
 }
 
 .numerinoGrande {
   font-family: 'Suisse-Regular';
-  font-size: 12pt;
+  font-size: 10pt;
   padding-bottom: 5px;
   width: 3.5vw;
   transition: font-variation-settings .45s;
@@ -441,7 +441,7 @@ img {
 
 #cardPrompt {
   font-family: Suisse-Regular;
-  font-size: 10pt;
+  font-size: 9pt;
   padding-top: 1vh;
   padding-bottom: 1vh;
   /* margin-top: -10%; */

@@ -2,7 +2,7 @@
 data = d3.csv("../assets/dataset/data_mappa.csv");
 
 //percorso immagini
-let percorsoImmagini = "../assets/mappa_imgs/normale/";
+let percorsoImmagini = "../assets/catalogo_imgs/normale/";
 let promptArray = [
   "climate-change",
   "climate-crisis",

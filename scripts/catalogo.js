@@ -2,7 +2,7 @@
 data = d3.csv("../assets/dataset/data_mappa.csv");
 data2 = d3.csv("../assets/dataset/data_catalogo.csv");
 let percorsoImmagini = "../assets/catalogo_imgs/normale/";
-let altezza = 450;
+let altezza = 31;
 
 
 
@@ -228,18 +228,18 @@ zoomContainer
   .attr("id", "ZoomPiu")
   .text("+")
   .on("click", function () {
-    if (altezza < 550) {
+    if (altezza < 50.05) {
       let ZoomMeno = d3.select("#ZoomMeno");
       ZoomMeno.style("opacity", "1");
       ZoomMeno.style("cursor", "pointer");
       let ZoomPiu = d3.select("#ZoomPiu");
       ZoomPiu.style("opacity", "1");
       ZoomPiu.style("cursor", "pointer");
-      let h = altezza + 50;
+      let h = altezza + 3.85;
       altezza = h;
-      let hdef = h + "px";
+      let hdef = h + "vw";
       let box = d3.selectAll(".box-img");
-      if (altezza > 400){
+      if (altezza > 30.8){
         let cardPrompt = d3.selectAll("#cardPrompt")
         cardPrompt.style("display", "flex")
       }
@@ -252,7 +252,7 @@ zoomContainer
       ZoomPiu.style("opacity", "0.3");
       ZoomPiu.style("cursor", "default");
       let h = altezza;
-      let hdef = h + "px";
+      let hdef = h + "vw";
       let box = d3.selectAll(".box-img");
       box.style("height", function () {
         return hdef;
@@ -267,18 +267,18 @@ zoomContainer
   .attr("id", "ZoomMeno")
   .text("-")
   .on("click", function () {
-    if (altezza > 150) {
+    if (altezza > 11.55) {
       let ZoomPiu = d3.select("#ZoomPiu");
       ZoomPiu.style("opacity", "1");
       ZoomPiu.style("cursor", "pointer");
       let ZoomMeno = d3.select("#ZoomMeno");
       ZoomMeno.style("opacity", "1");
       ZoomMeno.style("cursor", "pointer");
-      let h = altezza - 50;
+      let h = altezza - 3.85;
       altezza = h;
-      let hdef = h + "px";
+      let hdef = h + "vw";
       let box = d3.selectAll(".box-img");
-      if (altezza <= 400){
+      if (altezza <= 30.8){
         let cardPrompt = d3.selectAll("#cardPrompt")
         cardPrompt.style("display", "none")
       }
@@ -290,7 +290,7 @@ zoomContainer
       ZoomMeno.style("opacity", "0.3");
       ZoomMeno.style("cursor", "default");
       let h = altezza;
-      let hdef = h + "px";
+      let hdef = h + "vw";
       let box = d3.selectAll(".box-img");
       box.style("height", function () {
         e;
@@ -312,9 +312,9 @@ zoomContainer
     let ZoomMeno = d3.select("#ZoomMeno");
     ZoomMeno.style("opacity", "1");
     ZoomMeno.style("cursor", "pointer");
-    altezza = 450;
+    altezza = 34.65;
     let box = d3.selectAll(".box-img");
-    box.style("height", "450px");
+    box.style("height", "31vw");
     let cardPrompt = d3.selectAll("#cardPrompt")
     cardPrompt.style("display", "flex")
     
@@ -626,7 +626,7 @@ function ap(x) {
 
 function animazione() {
   let box = d3.selectAll(".box-img");
-  box.style("height", "450px");
+  box.style("height", "31vw");
 }
 
 /// fai selezionare solo una sezione per volta
@@ -704,14 +704,14 @@ function closeAll() {
   let cont19 = document.getElementById("boxCat19");
   cont19.style.display = "none";
   let box = d3.selectAll(".box-img");
-  box.style("height", "50px");
+  box.style("height", "3.85vw");
   let ZoomMeno = d3.select("#ZoomMeno");
   ZoomMeno.style("opacity", "1");
   ZoomMeno.style("cursor", "pointer");
   let ZoomPiu = d3.select("#ZoomPiu");
   ZoomPiu.style("opacity", "1");
   ZoomPiu.style("cursor", "pointer");
-  altezza = 450;
+  altezza = 31;
     let cardPrompt = d3.selectAll("#cardPrompt")
     cardPrompt.style("display", "flex")
 

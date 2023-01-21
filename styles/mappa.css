@@ -47,7 +47,7 @@ body {
 .main-title {
   font-size: 16pt;
   position: absolute;
-  top: 40px;
+  top: 3vw;
   left: 2vw;
   z-index: 1;
 }
@@ -61,7 +61,7 @@ body {
 	z-index: 100;
 	width: 100vw;
   height: 7vh;
-  box-shadow: 0 0 15px 15px #f8f8f8;
+  box-shadow: 0 0 1vw 1vw #f8f8f8;
   z-index: 1;
   display: flex;
   flex-direction: row;
@@ -76,7 +76,7 @@ body {
   justify-content: flex-start;
   align-items: center;
   padding-left: 1.5vw;
-  gap: 50px;
+  gap: 4.3vw;
 }
 
 .dx {
@@ -87,7 +87,7 @@ body {
   justify-content: flex-end;
   align-items: center;
   padding-right: 1.5vw;
-  gap: 50px;
+  gap: 4.3vw;
 }
 
 .logo {
@@ -131,12 +131,12 @@ body {
 .bottoniMenu {
   font-family: 'Suisse-Regular';
   /* font-weight: 400; */
-  font-size: 11px;
+  font-size: 0.9vw;
   width: auto;
   height: auto;
   background: #f8f8f8;
   /* backdrop-filter: blur(5px);
-  border-radius: 50px; */
+  border-radius: 4.3vw; */
   border: none;
   cursor: pointer;
 }
@@ -144,13 +144,13 @@ body {
 .bottoniMenu:hover {
   font-family: 'Suisse-Regular';
   /* font-weight: 400; */
-  font-size: 11px;
+  font-size: 0.9vw;
   text-decoration: underline;
   width: auto;
   height: auto;
   background: #f8f8f8;
   /* backdrop-filter: blur(5px);
-  border-radius: 50px; */
+  border-radius: 4.3vw; */
   border: none;
   cursor: pointer;
 }
@@ -189,7 +189,7 @@ body {
   height: auto;
   z-index: 1;
   padding: 1vh;
-  padding-left: 12px;
+  padding-left: 1vw;
   gap: 0.3vh;
   background: #ffffff;
   display: none;
@@ -198,7 +198,7 @@ body {
 
 .p-bias{
   font-family: 'Suisse-Regular';
-  font-size: 11px;
+  font-size: 0.86vw;
   height: 3vh;
   background: #FFFFFF;
   padding-top: 0.4vh;
@@ -212,7 +212,7 @@ body {
   justify-content: center;
   justify-content: flex-start;
   align-items: center;
-  padding: 10px;
+  padding: 0.7vw;
   transition: all 700ms ease;
 }
 
@@ -228,17 +228,17 @@ body {
   flex-direction: column;
   height: 5.5vh;
   z-index: 1;
-  padding-left: 5px;
+  padding-left: 0.35vw;
   background: #FFFFFF;
-  box-shadow: 0 0 10px 10px rgb(255, 255, 255);
+  box-shadow: 0 0 0.7vw 0.7vw rgb(255, 255, 255);
   transition: all 700ms ease;
 }
 
 .casella{
-  margin-left: 15px;
+  margin-left: 1vw;
   font-family: 'Suisse-Regular';
   font-style: italic;
-  font-size: 12px;
+  font-size: 1vw;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -249,7 +249,7 @@ body {
   border: none;
   cursor: pointer;
   background: #FFFFFF;
-  border-width: 1px;
+  border-width: 0.1vw;
   border-style: solid;
   border-color: #000000;
   transition: all 700ms ease;
@@ -257,9 +257,9 @@ body {
 
 
 .resetFiltri{
-  margin-left: 15px;
+  margin-left: 1vw;
   font-family: 'Suisse-Regular';
-  font-size: 12px;
+  font-size: 1vw;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -268,15 +268,15 @@ body {
   border: none;
   cursor: pointer;
   background: #FFFFFF;
-  border-width: 1px;
+  border-width: 0.1vw;
   border-style: solid;
   border-color: #000000;
 }
 
 .resetFiltri:hover{
-  margin-left: 15px;
+  margin-left: 1vw;
   font-family: 'Suisse-Regular';
-  font-size: 12px;
+  font-size: 1vw;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -285,7 +285,7 @@ body {
   border: none;
   cursor: pointer;
   background: #000000;
-  border-width: 1px;
+  border-width: 0.1vw;
   border-style: solid;
   border-color: #000000;
   color: #FFFFFF;
@@ -300,8 +300,8 @@ body {
   justify-content: flex-start;
   height: auto;
   z-index: 1;
-  padding-left: 10px;
-  padding-right: 10px;
+  padding-left: 0.7vw;
+  padding-right: 0.7vw;
   background: #FFFFFF;
   transition: all 700ms ease;
 }
@@ -309,7 +309,7 @@ body {
 
 .filter-by{
   font-family: 'Suisse-Regular';
-  font-size: 12px;
+  font-size: 1vw;
   width: auto;
   height: 3vh;
   display: flex;
@@ -321,11 +321,11 @@ body {
 
 .bottoniBias {
   font-family: 'Suisse-Regular';
-  font-size: 11.7px;
+  font-size: 0.86vw;
   width: auto;
   height: 3vh;
   /* backdrop-filter: blur(5px); */
-  /* border-radius: 50px; */
+  /* border-radius: 4.3vw; */
   border: none;
   cursor: pointer;
   background: #FFFFFF;
@@ -333,12 +333,12 @@ body {
 
 .bottoniBias:hover {
   font-family: 'Suisse-Regular';
-  font-size: 11.7px;
+  font-size: 0.86vw;
   width: auto;
   height: 3vh;
   text-decoration: underline;
   /* backdrop-filter: blur(5px); */
-  /* border-radius: 50px; */
+  /* border-radius: 4.3vw; */
   border: none;
   cursor: pointer;
 }
@@ -417,7 +417,7 @@ body {
 .titoli-categorie{
   font-family: 'Exposure-italic';
   font-variation-settings: "EXPO" -40;
-  font-size: 14.5pt;
+  font-size: 1.5vw;
   display: flex;
   flex-direction: row;
   /* height: 5vh; */
@@ -472,26 +472,26 @@ img {
   transform:translate(+5%,+5%);
   height:auto;
   width:auto;
-  padding: 5px;
-  padding-left: 10px;
-  padding-right: 10px;
+  padding: 0.35vw;
+  padding-left: 0.7vw;
+  padding-right: 0.7vw;
   z-index: 1;
   top:0px;
   left: 0px;
   display: block;
   background-color: rgba(255, 255, 255, 0.8);
-  backdrop-filter: blur(1px);
-  border-radius: 50px;
+  backdrop-filter: blur (0.1vw);
+  border-radius: 4.3vw;
   border: none;
 }
 
 #Testo{
-  font-size: 10pt;
+  font-size: 1vw;
 }
 
 .righe{
   width: 100%;
-  height: 1px;
+  height: 0.1vw;
   margin-bottom: 2.5vh;
   background-color: black;
 }
@@ -500,7 +500,7 @@ img {
   width: 19vw;
   font-family: 'Exposure-italic';
   font-variation-settings: "EXPO" 0;
-  font-size: 8pt;
+  font-size: 0.85vw;
   padding-left: 0.3vw;
   padding-bottom: 1vh;
 }
@@ -519,16 +519,16 @@ img {
   z-index: 1;
   width: auto;
   display: flex;
-  padding-left: 5px;
-  padding-right: 5px;
+  padding-left: 0.35vw;
+  padding-right: 0.35vw;
   justify-content: flex-start;
   flex-direction: row;
   align-items: center;
   height: 5.5vh;
   z-index: 1;
-  padding: 15px;
+  padding: 1vw;
   background: #FFFFFF;
-  box-shadow: 0 0 10px 10px rgb(255, 255, 255);
+  box-shadow: 0 0 0.7vw 0.7vw rgb(255, 255, 255);
   transition: all 700ms ease;
 }
 
@@ -536,7 +536,7 @@ img {
 
 /* .controlli {
   position: absolute;
-  top: 50px;
+  top: 4.3vw;
   left: 87vw;
   z-index: 1;
   width: 10vw;
@@ -546,23 +546,23 @@ img {
 
 .bottoneReset {
  font-family: 'Suisse-Regular';
-  font-size: 12px;
+  font-size: 1vw;
   width: 8vw;
   height: 3.5vh;
-  margin-left: 15px;
+  margin-left: 1vw;
   padding-left: 0.5vw;
   padding-right: 0.5vw;
   border: none;
   cursor: pointer;
   background: #FFFFFF;
-  border-width: 1px;
+  border-width: 0.1vw;
   border-style: solid;
   border-color: #000000;
 }
 
 .bottoneReset:hover {
   font-family: 'Suisse-Regular';
-  font-size: 14px;
+  font-size: 1vw;
   width: 8vw;
   height: 3.5vh;
   padding-left: 0.5vw;
@@ -570,7 +570,7 @@ img {
   border: none;
   cursor: pointer;
   background: #000000;
-  border-width: 1px;
+  border-width: 0.1vw;
   border-style: solid;
   border-color: #000000;
   color: #FFFFFF;

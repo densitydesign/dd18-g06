@@ -62,20 +62,20 @@ a {
 	text-decoration: none;
 }
 
-.menu{
+.menu {
   background-color: #f8f8f8;
   position: fixed;
-	display: flex;
-	justify-content: space-between;
-	top: 0;
-	z-index: 100;
-	width: 100vw;
+  display: flex;
+  justify-content: space-between;
+  top: 0;
+  z-index: 100;
+  width: 100vw;
   height: 7vh;
-  box-shadow: 0 0 15px 15px #f8f8f8;
+  box-shadow: 0 0 1vw 1vw #f8f8f8;
   z-index: 100;
   display: flex;
   flex-direction: row;
-  justify-content:space-around;
+  justify-content: space-around;
 }
 
 .sx {
@@ -86,7 +86,7 @@ a {
   justify-content: flex-start;
   align-items: center;
   padding-left: 1.5vw;
-  gap: 50px;
+  gap: 4.3vw;
 }
 
 .dx {
@@ -97,7 +97,7 @@ a {
   justify-content: flex-end;
   align-items: center;
   padding-right: 1.5vw;
-  gap: 50px;
+  gap: 4.3vw;
 }
 
 .logo {
@@ -105,7 +105,7 @@ a {
   z-index: 1;
   display: flex;
   flex-direction: row;
-  justify-content:space-around;
+  justify-content: center;
 }
 
 .title {
@@ -141,7 +141,7 @@ a {
 .bottoniMenu {
   font-family: 'Suisse-Regular';
   /* font-weight: 400; */
-  font-size: 11px;
+  font-size: 0.9vw;
   width: auto;
   height: auto;
   background: #f8f8f8;
@@ -154,7 +154,7 @@ a {
 .bottoniMenu:hover {
   font-family: 'Suisse-Regular';
   /* font-weight: 400; */
-  font-size: 11px;
+  font-size: 0.9vw;
   text-decoration: underline;
   width: auto;
   height: auto;
@@ -196,7 +196,7 @@ section {
 
 
 .section_title {
-  font-size: 32px;
+  font-size: 2.5vw;
   font-family: 'Exposure-Italic';
   font-variation-settings: "EXPO" -40;
   width: 20%;
@@ -209,10 +209,10 @@ section {
 
 
 .para{
-  margin-top: 8px;
+  margin-top: 0.65vw;
   display: flex;
   flex-flow: column;
-  gap: 16px;
+  gap: 1.3vw;
   width:90%;
   box-sizing: border-box;
 }
@@ -220,12 +220,12 @@ section {
 .para p {
   font-family: 'Exposure';
   font-variation-settings: "EXPO" -10;
-  font-size: 14.5px;
+  font-size: 1.13vw;
 }
 
 .freccia {
-  width: 25px;
-	height: 25px;
+  width: 2vw;
+	height: 2vw;
 }
 
 .bold {
@@ -236,15 +236,15 @@ section {
 .graph {
   width: 100%;
   object-fit: cover;
-  margin: 36px 0;
+  margin: 2.8vw 0;
 }
 
 .imgs_container {
   position: relative;
   width: 100%;
   display: flex;
-  gap: 16px;
-	margin: 36px 0;
+  gap: 1.3vw;
+	margin: 2.8vw 0;
 }
 
 .graph-2 {
@@ -256,7 +256,7 @@ section {
 
 .didascalia {
 	font-family: "Suisse-Regular" !important;
-	font-size: 12px !important;
+	font-size: 0.95vw !important;
 }
 
 .team_container {
@@ -266,7 +266,7 @@ section {
 
 .team {
   width: 25%;
-  padding: 8px;
+  padding: 0.65vw;
   box-sizing: border-box;
 }
 
@@ -302,11 +302,11 @@ main {
   right: 12vw;
   width: 20%;
   margin-left: 10%;
-  margin-top: 8px;
+  margin-top: 0.65vw;
   display: flex;
   flex-direction: column;
   align-self: flex-start;
-  gap: 8px;
+  gap: 0.65vw;
   width: auto;
   position: sticky;
   order: 2;
@@ -314,7 +314,7 @@ main {
 
 li {
   font-family: 'Suisse-Regular';
-  font-size: 12px;
+  font-size: 0.95vw;
   letter-spacing: -2%;
   display: inline-block;
   cursor: pointer;
@@ -358,7 +358,7 @@ footer {
 	font-size: 1vw;
 	color: #000;
 	font-variation-settings: -50;
-	margin-bottom: 8px;
+	margin-bottom: 0.65vw;
 }
 
 #footer_sx {

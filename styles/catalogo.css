@@ -25,7 +25,7 @@
 	--y: 0;
 	--opacity: 1;
 	--margin: 40vh;
-	--fontSize: 150px;
+	--fontSize: 14.3vw;
 } */
 
 
@@ -68,7 +68,7 @@ body {
 .main-title {
   font-size: 16pt;
   position: absolute;
-  top: 50px;
+  top: 4.3vw;
   left: 2vw;
   z-index: 1;
 }
@@ -82,7 +82,7 @@ body {
   z-index: 100;
   width: 100vw;
   height: 7vh;
-  box-shadow: 0 0 15px 15px #f8f8f8;
+  box-shadow: 0 0 1vw 1vw #f8f8f8;
   z-index: 1;
   display: flex;
   flex-direction: row;
@@ -97,7 +97,7 @@ body {
   justify-content: flex-start;
   align-items: center;
   padding-left: 1.5vw;
-  gap: 50px;
+  gap: 4.3vw;
 }
 
 .dx {
@@ -108,7 +108,7 @@ body {
   justify-content: flex-end;
   align-items: center;
   padding-right: 1.5vw;
-  gap: 50px;
+  gap: 4.3vw;
 }
 
 .logo {
@@ -152,12 +152,12 @@ body {
 .bottoniMenu {
   font-family: 'Suisse-Regular';
   /* font-weight: 400; */
-  font-size: 11px;
+  font-size: 0.9vw;
   width: auto;
   height: auto;
   background: #f8f8f8;
-  /* backdrop-filter: blur(5px);
-  border-radius: 50px; */
+  /* backdrop-filter: blur(0.4vw);
+  border-radius: 4.3vw; */
   border: none;
   cursor: pointer;
 }
@@ -165,13 +165,13 @@ body {
 .bottoniMenu:hover {
   font-family: 'Suisse-Regular';
   /* font-weight: 400; */
-  font-size: 11px;
+  font-size: 0.9vw;
   text-decoration: underline;
   width: auto;
   height: auto;
   background: #f8f8f8;
-  /* backdrop-filter: blur(5px);
-  border-radius: 50px; */
+  /* backdrop-filter: blur(0.4vw);
+  border-radius: 4.3vw; */
   border: none;
   cursor: pointer;
 }
@@ -193,39 +193,39 @@ body {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding: 15px;
-  gap: 15px;
+  padding: 1vw;
+  gap: 1vw;
   display: none;
   background: #FFFFFF;
-  box-shadow: 0 0 10px 10px rgb(255, 255, 255);
+  box-shadow: 0 0 1vw 1vw rgb(255, 255, 255);
 }
 
 .bottoniZoom {
   font-family: 'Suisse-Regular';
-  font-size: 14px;
+  font-size: 1.2vw;
   width: 3.5vh;
   height: 3.5vh;
-  /* backdrop-filter: blur(5px); */
-  /* border-radius: 50px; */
+  /* backdrop-filter: blur(0.4vw); */
+  /* border-radius: 4.3vw; */
   border: none;
   cursor: pointer;
   background: #FFFFFF;
-  border-width: 1px;
+  border-width: 0.1vw;
   border-style: solid;
   border-color: #000000;
 }
 
 .bottoniZoom:hover {
   font-family: 'Suisse-Regular';
-  font-size: 14px;
+  font-size: 1.2vw;
   width: 3.5vh;
   height: 3.5vh;
-  /* backdrop-filter: blur(5px); */
-  /* border-radius: 50px; */
+  /* backdrop-filter: blur(0.4vw); */
+  /* border-radius: 4.3vw; */
   border: none;
   cursor: pointer;
   background: #000000;
-  border-width: 1px;
+  border-width: 0.1vw;
   border-style: solid;
   border-color: #000000;
   color: #ffffff;
@@ -233,32 +233,32 @@ body {
 
 #ZoomReset {
   font-family: 'Suisse-Regular';
-  font-size: 12px;
+  font-size: 1vw;
   width: 10vh;
   height: 3.5vh;
-  /* backdrop-filter: blur(5px); */
-  /* border-radius: 50px; */
+  /* backdrop-filter: blur(0.4vw); */
+  /* border-radius: 4.3vw; */
   border: none;
   cursor: pointer;
   background: #ffffff;
-  box-shadow: 0 0 6px 6px rgb(255, 255, 255);
-  border-width: 1px;
+  box-shadow: 0 0 0.7vw 0.7vw rgb(255, 255, 255);
+  border-width: 0.1vw;
   border-style: solid;
   border-color: #000000;
 }
 
 #ZoomReset:hover {
   font-family: 'Suisse-Regular';
-  font-size: 12px;
+  font-size: 1vw;
   width: 10vh;
   height: 3.5vh;
-  /* backdrop-filter: blur(5px); */
-  /* border-radius: 50px; */
+  /* backdrop-filter: blur(0.4vw); */
+  /* border-radius: 4.3vw; */
   border: none;
   cursor: pointer;
   background: #000000;
-  box-shadow: 0 0 6px 6px rgb(255, 255, 255);
-  border-width: 1px;
+  box-shadow: 0 0 0.7vw 0.7vw rgb(255, 255, 255);
+  border-width: 0.1vw;
   border-style: solid;
   border-color: #000000;
   color: #ffffff;
@@ -302,7 +302,7 @@ body {
   /* background-color: rgb(143, 246, 217); */
   font-family: 'Exposure-italic';
   font-variation-settings: "EXPO" 0;
-  font-size: 20pt;
+  font-size: 2.1vw;
   height: 11vh;
   padding-top: 3.5vh;
   width: 26vw;
@@ -313,7 +313,7 @@ body {
   /* background-color: rgb(143, 246, 217); */
   font-family: 'Exposure-italic';
   font-variation-settings: "EXPO" -60;
-  font-size: 20pt;
+  font-size: 2.1vw;
   height: 11vh;
   padding-top: 3.5vh;
   width: 26vw;
@@ -324,7 +324,7 @@ body {
   /* background-color: rgb(143, 246, 217); */
   font-family: 'Exposure-italic';
   font-variation-settings: "EXPO" -60;
-  font-size: 20pt;
+  font-size: 2.1vw;
   height: 11vh;
   padding-top: 3.5vh;
   width: 26vw;
@@ -339,7 +339,7 @@ body {
 
 .titoli-small {
   /* background-color: rgb(143, 246, 217); */
-  font-size: 9pt;
+  font-size: 0.95vw;
   font-family: 'Suisse-Regular';
   width: auto;
   display: none;
@@ -350,7 +350,7 @@ body {
 
 
 .grassetto {
-  font-size: 10pt;
+  font-size: 1vw;
   font-family: 'Suisse-Regular';
   font-weight: 600;
   font-style: italic;
@@ -366,8 +366,8 @@ body {
   flex-wrap: wrap;
   /* align-items: center; */
   margin: 0;
-  padding-bottom: 20px;
-  padding-top: 20px;
+  padding-bottom: 1.8vw;
+  padding-top: 1.8vw;
   display: none;
   transition: all 1000ms ease;
 }
@@ -378,10 +378,10 @@ body {
   display: flex;
   flex-direction: row;
   align-items: center;
-  gap: 10px;
+  gap: 1vw; 
   overflow-x: scroll;
   overflow-y: hidden;
-  height: 50px;
+  height: 4.3vw;
   width: 80vw;
   cursor: default;
   transition: all 1200ms ease;
@@ -397,8 +397,8 @@ body {
 .titoli-categorie {
   font-family: 'Exposure-italic';
   font-variation-settings: "EXPO" -20;
-  font-size: 11pt;
-  padding-bottom: 5px;
+  font-size: 1.2vw;
+  padding-bottom: 0.4vw;
   width: 11vw;
   transition: font-variation-settings .45s;
   transition: all 1000ms ease;
@@ -412,15 +412,15 @@ body {
   /* font-family: 'Exposure';
   font-variation-settings: "EXPO" 100; */
   font-family: 'Suisse-Regular';
-  font-size: 10pt;
-  padding-bottom: 5px;
+  font-size: 1vw;
+  padding-bottom: 0.4vw;
   width: 3.5vw;
 }
 
 .numerinoGrande {
   font-family: 'Suisse-Regular';
-  font-size: 10pt;
-  padding-bottom: 5px;
+  font-size: 1vw;
+  padding-bottom: 0.4vw;
   width: 3.5vw;
   transition: font-variation-settings .45s;
   padding-top: 3.5vh;
@@ -441,7 +441,7 @@ img {
 
 #cardPrompt {
   font-family: Suisse-Regular;
-  font-size: 9pt;
+  font-size: 0.95vw;
   padding-top: 1vh;
   padding-bottom: 1vh;
   /* margin-top: -10%; */
@@ -453,7 +453,7 @@ img {
 .card {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  /* align-items: center; */
   padding: 0;
   padding-bottom: 5vh;
   height: 100%;
@@ -461,19 +461,19 @@ img {
 
 #BoxTesto {
   position: absolute;
-  transform: translate(+5px, +5px);
+  transform: translate(+0.4vw, +0.4vw);
   height: auto;
   width: auto;
   padding: 3px;
-  padding-left: 5px;
-  padding-right: 5px;
+  padding-left: 0.4vw;
+  padding-right: 0.4vw;
   z-index: 1;
   top: 0px;
   left: 0px;
   display: block;
   background-color: rgba(255, 255, 255, 0);
   /* background-color: rgba(255, 255, 255, 0.8); */
-  /* border-radius: 50px; */
+  /* border-radius: 4.3vw; */
   border: none;
 }
 
@@ -484,7 +484,7 @@ img {
 
 .righe {
   width: 100%;
-  height: 1px;
+  height: 0.1vw;
   background-color: black;
 }
 

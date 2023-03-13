@@ -1,3 +1,12 @@
+if(window.innerHeight > window.innerWidth){
+  alert("This website is not optimized for mobile use :(");
+}
+var is_safari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
+if (is_safari) {
+  alert("Please open this website via chrome browser :)");
+}
+
+
 // Interpret the data as the correct format. Use d3.csv or d3.tsv accordingly.
 data = d3.csv("../assets/dataset/data_mappa.csv");
 data2 = d3.csv("../assets/dataset/data_catalogo.csv");

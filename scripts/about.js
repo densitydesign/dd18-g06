@@ -1,3 +1,11 @@
+if(window.innerHeight > window.innerWidth){
+  alert("This website is not optimized for mobile use :(");
+}
+var is_safari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
+if (is_safari) {
+  alert("Please open this website via chrome browser :)");
+}
+
 w = window.innerWidth;
 h = window.innerHeight;
 

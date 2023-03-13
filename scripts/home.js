@@ -40,6 +40,13 @@ const saveCursorPosition = function(x, y) {
 
   document.addEventListener('mousemove', e => { saveCursorPosition(e.clientX, e.clientY); })
 
+  if(window.innerHeight > window.innerWidth){
+    alert("This website is not optimized for mobile use :(");
+  }
+  var is_safari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
+  if (is_safari) {
+    alert("Please open this website via chrome browser :)");
+  }
 
 //----------------------parallax-----------------------------//
   var scene = document.getElementById('scene2');
